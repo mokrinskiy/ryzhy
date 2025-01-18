@@ -12,11 +12,11 @@ import Link from "next/link";
 
 const Header = () => {
     return (
-        <div className="w-full px-[30px] py-[10px] max-md:px-[10px] flex justify-between fixed z-30 ">
+        <div className="w-full px-[30px] py-[10px] max-md:px-[10px] flex justify-between fixed z-30  items-center">
             {/* logo */}
             <Link
                 href={"/"}
-                className="w-[30px] h-[30px] bg-[#569940] rounded-full"
+                className="w-[30px] max-md:h-[15px] max-md:w-[15px] h-[30px] bg-[#569940] rounded-full"
             />
             {/* menubar */}
             <div className="flex gap-5">

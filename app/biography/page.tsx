@@ -13,7 +13,7 @@ const sections_buttons = [
 
 const page = () => {
     return (
-        <div className="w-full px-[30px] max-md:px-[10px] pt-[60px] flex gap-2 min-h-[100vh] max-lg:flex-col-reverse">
+        <div className="w-full px-[30px] max-md:px-[10px] pt-[60px] flex gap-2 min-h-[100vh] max-lg:flex-col-reverse pb-5">
             <div className="w-[50%] max-lg:w-full flex justify-between flex-col">
                 <div>
                     <p className="max-md:text-xs">Русский поэт и геолог</p>
@@ -28,7 +28,7 @@ const page = () => {
                             <Button
                                 key={id}
                                 variant="ghost"
-                                className="w-full flex justify-between border-b-2 border-current rounded-none px-2 "
+                                className="w-full flex justify-between border-b-2 border-current rounded-none px-2"
                             >
                                 <p className="text-[20px] max-md:text-base">
                                     {item}
@@ -41,14 +41,14 @@ const page = () => {
                     </div>
                 </div>
             </div>
-            <div className="w-[50%] flex max-lg:w-full h-full">
-                <div className="relative max-lg:flex w-full h-auto aspect-video">
+            <div className="w-[50%] flex max-lg:w-full items-end">
+                <div className="relative w-full h-[500px] max-md:h-[350px]">
                     <Image
-                        fill={true}
-                        sizes="auto"
-                        className="object-cover w-full h-full"
+                        layout="fill"
+                        className="object-cover"
                         src={`/images/main_biography.jpg`}
                         alt="gallery-image-6"
+                        priority={true} 
                     />
                 </div>
             </div>
