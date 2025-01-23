@@ -1,51 +1,62 @@
 import { Button } from "@/components/ui/button";
+import { menu_links } from "@/content/menu_links";
 import Image from "next/image";
 import Link from "next/link";
 
-const links = [
-    { title: "Стихотворения", link: "/" },
-    { title: "Биография", link: "/biography" },
-    { title: "Галерея", link: "/gallery" },
-    { title: "Ключевые даты", link: "/" },
-];
-
 export default function Home() {
     return (
-        <div className="px-[30px] max-md:px-[15px] flex items-center flex-col min-h-[100vh] max-lg:pt-[40px] justify-start">
-            <div className="flex max-lg:w-full w-[55%] flex-col items-center p-20 lg:bg-[url('/images/main_bg.png')] bg-cover max-lg:py-5 max-lg:px-10 bg-center py-20 lg:mt-10">
-                {/* years */}
-                <div className="flex justify-center items-center flex-col mb-5">
-                    <p className="text-xs opacity-50">ГОДЫ:</p>
-                    <p className="max-md:text-sm">1974 — 2001</p>
+        <div className="w-full h-screen px-[30px] py-[10px] max-md:p-[10px] flex flex-col justify-between overflow-hidden">
+            <div className="text-5xl z-10">
+                <p>“В России расстаются навсегда.</p>
+                <div className="w-full flex justify-center">
+                    <p>В России друг от друга города</p>
                 </div>
-                <div className="w-[40%] max-md:w-[100%] flex justify-center">
-                    <Image
-                        width={400}
-                        height={300}
-                        className="object-cover"
-                        src={`/images/main_image.png`}
-                        layout="responsive"
-                        alt="gallery-image-6"
-                    />
+                <div className="w-full flex justify-center">
+                    <p>столь далеки,</p>
                 </div>
-                <div className="relative flex flex-col items-center w-full">
-                    <h1 className="text-[4.5vw] absolute -top-14 max-lg:-top-10 max-md:-top-6 max-md:text-3xl">
-                        БОРИС РЫЖИЙ
-                    </h1>
-                    <p className="absolute max-lg:mt-4 max-md:mt-2 mt-8 underline text-sm text-black max-lg:text-white">
-                        РУССКИЙ ПОЭТ
-                    </p>
+                <div className="w-full flex justify-end">
+                    <p>что вздрагиваю я, шепнув «прощай».”</p>
+                </div>
+                <div className="w-full flex justify-end">
+                    <p>БориС РЫЖИЙ</p>
                 </div>
             </div>
-            {/* links */}
-            <div className="flex justify-center w-full items-center mt-10  text-lg gap-[5vw] mb-5 max-md:gap-1 max-md:flex-col max-md:py-5">
-                {links.map((item, id) => (
-                    <Link key={id} href={item.link}>
-                        <Button variant="ghost" className="text-lg">
-                            {item.title}
-                        </Button>
-                    </Link>
-                ))}
+            <div className="relative bottom-20 z-0 left-0 right-0 m-auto my-0 h-[430px] w-[650px]">
+                <Image
+                    src={"/images/main_image.png"}
+                    alt="main_image"
+                    className="object-cover"
+                    fill={true}
+                    sizes="auto"
+                />
+            </div>
+            <div className="absolute top-[50%] left-[10%]">
+                <p className="font-black text-accent">[ русский поэт ]</p>
+                <div className="flex gap-2 items-end">
+                    <p className="text-gray text-sm">годы:</p>
+                    <p>1974 — 2001</p>
+                </div>
+            </div>
+            <div className="w-full justify-between flex items-center px-[5%] py-[10px]">
+                <div className="flex justify-between text-xl gap-x-5">
+                    {menu_links.map((item, id) => (
+                        <Link key={id} href={item.link}>
+                            <Button variant="ghost" className="text-xl">
+                                {item.title}
+                            </Button>
+                        </Link>
+                    ))}
+                </div>
+                <div className="flex items-center min-w-[100px] w-auto h-auto">
+                    <Button
+                        variant="ghost"
+                        className="text-xl hover:text-transparent"
+                    >
+                        <p className="text-accent text-sm font-black">
+                            о сайте
+                        </p>
+                    </Button>
+                </div>
             </div>
         </div>
     );

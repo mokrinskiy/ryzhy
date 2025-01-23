@@ -3,21 +3,18 @@ import {
     DropdownMenu,
     DropdownMenuContent,
     DropdownMenuItem,
+    DropdownMenuSeparator,
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { AlignRight } from "lucide-react";
 import { ModeToggle } from "./ModeToogle";
 import { Button } from "./ui/button";
 import Link from "next/link";
+import { menu_links } from "@/content/menu_links";
 
 const Header = () => {
     return (
-        <div className="w-full px-[30px] py-[10px] max-md:px-[10px] flex justify-between fixed z-30  items-center">
-            {/* logo */}
-            <Link
-                href={"/"}
-                className="w-[30px] max-md:h-[15px] max-md:w-[15px] h-[30px] bg-[#569940] rounded-full"
-            />
+        <div className="w-full px-[30px] py-[10px] max-md:px-[10px] flex justify-end fixed z-30  items-center">
             {/* menubar */}
             <div className="flex gap-5">
                 <ModeToggle />
@@ -28,10 +25,15 @@ const Header = () => {
                         </Button>
                     </DropdownMenuTrigger>
                     <DropdownMenuContent className="mr-[10px] rounded-none">
-                        <DropdownMenuItem>Стихотворения</DropdownMenuItem>
-                        <DropdownMenuItem>Биография</DropdownMenuItem>
-                        <DropdownMenuItem>Галерея</DropdownMenuItem>
-                        <DropdownMenuItem>Важные даты</DropdownMenuItem>
+                        <DropdownMenuItem>
+                            <Link href={"/"}>Главная</Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuSeparator />
+                        {menu_links.map((item, id) => (
+                            <DropdownMenuItem key={id}>
+                                <Link href={item.link}>{item.title}</Link>
+                            </DropdownMenuItem>
+                        ))}
                     </DropdownMenuContent>
                 </DropdownMenu>
             </div>
