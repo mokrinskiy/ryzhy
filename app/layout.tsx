@@ -14,10 +14,10 @@ const myFont = localFont({
             style: "normal", // Стиль
         },
         {
-          path: "../fonts/NEXT ART_Regular.otf", // Путь к файлу Bold
-          weight: "400", // Вес шрифта Bold
-          style: "normal", // Стиль
-      },
+            path: "../fonts/NEXT ART_Regular.otf", // Путь к файлу Bold
+            weight: "400", // Вес шрифта Bold
+            style: "normal", // Стиль
+        },
         {
             path: "../fonts/NEXT ART_Bold.otf", // Путь к файлу Bold
             weight: "700", // Вес шрифта Bold

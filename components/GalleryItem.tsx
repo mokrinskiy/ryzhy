@@ -10,22 +10,29 @@ import {
 } from "@/components/ui/dialog";
 
 interface GalleryItemProps {
-    image: string;
+    src: string;
+    alt: string;
+    id: number;
+    type: string;
 }
 
-const GalleryItem: React.FC<GalleryItemProps> = ({ image }) => {
+const GalleryItem: React.FC<GalleryItemProps> = ({ src, alt, id, type }) => {
     return (
         <Dialog>
             <DialogTrigger asChild>
-                <div className="w-full relative h-auto border-2 border-white cursor-pointer">
+                <div
+                    key={id}
+                    className={`overflow-hidden min=max-h-[400px] shadow-md flex items-center ${
+                        type === "landscape" ? "" : "aspect-[3/4]"
+                    }`}
+                >
                     <Image
-                        width={450}
-                        height={300}
-                        className="object-cover"
-                        src={`/images/${image}`}
+                        src={src}
+                        alt={alt}
                         layout="responsive"
-                        alt="gallery-image-6"
-                        priority={true}
+                        width={450}
+                        height={650}
+                        objectFit="cover"
                     />
                 </div>
             </DialogTrigger>
@@ -34,12 +41,12 @@ const GalleryItem: React.FC<GalleryItemProps> = ({ image }) => {
                     <DialogTitle></DialogTitle>
                     <DialogDescription>
                         <Image
-                            width={450}
-                            height={300}
-                            className="object-cover"
-                            src={`/images/${image}`}
+                            src={src}
+                            alt={alt}
                             layout="responsive"
-                            alt="gallery-image-6"
+                            width={450}
+                            height={650}
+                            objectFit="cover"
                         />
                     </DialogDescription>
                 </DialogHeader>
