@@ -15,7 +15,6 @@ const Main = () => {
                     <p>переживаниях.</p>
                 </div>
             </div>
-
             <div className="w-full h-full flex justify-between gap-[150px]">
                 <div className="w-[50%] flex justify-end items-end">
                     <div className="mr-[50px] text-xl flex justify-end flex-col">
@@ -38,7 +37,7 @@ const Main = () => {
                     </p>
                     <div className="w-[500px] h-full relative">
                         <Image
-                            src={"/images/bio/bio1.png"}
+                            src={"/images/bio/bio1.jpg"}
                             alt="bio1"
                             sizes="auto"
                             className="object-cover"

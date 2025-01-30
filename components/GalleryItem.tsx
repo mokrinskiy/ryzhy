@@ -22,7 +22,7 @@ const GalleryItem: React.FC<GalleryItemProps> = ({ src, alt, id, type }) => {
             <DialogTrigger asChild>
                 <div
                     key={id}
-                    className={`overflow-hidden min=max-h-[400px] shadow-md flex items-center ${
+                    className={`shadow-md flex items-center ${
                         type === "landscape" ? "" : "aspect-[3/4]"
                     }`}
                 >
