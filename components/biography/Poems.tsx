@@ -3,7 +3,7 @@ import React from "react";
 
 const Poems = () => {
     return (
-        <div className="w-full px-[30px] pt-[10px] max-md:p-[10px] flex flex-col overflow-hidden gap-y-[150px] bg-[url(/images/bio/poems_bg.png)] py-[150px] bg-cover">
+        <div className="w-full px-[30px] pt-[10px] max-md:p-[10px] flex flex-col overflow-hidden bg-center gap-y-[150px] bg-[url(/images/bio/poems_bg.png)] py-[150px] bg-cover">
             {/*1*/}
             <div className="w-full h-full flex justify-between gap-[150px]">
                 <div className="w-[50%] flex items-end flex-col space-y-[50px]">

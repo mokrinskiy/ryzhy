@@ -3,7 +3,7 @@ import React from "react";
 
 const Childhood = () => {
     return (
-        <div className="w-full px-[30px] py-[150px] pt-[10px] max-md:p-[10px] flex flex-col overflow-hidden gap-y-[150px] bg-[url(/images/bio/childhood_bg.jpg)] bg-cover">
+        <div className="w-full px-[30px] py-[150px] pt-[10px] max-md:p-[10px] flex flex-col overflow-hidden gap-y-[150px] bg-center bg-[url(/images/bio/childhood_bg.jpg)] bg-cover">
             {/* 1 */}
             <div className="w-full h-full flex justify-between gap-[150px]">
                 <div className="w-[50%] flex justify-end items-end">

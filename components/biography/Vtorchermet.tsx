@@ -5,7 +5,7 @@ const Vtorchermet = () => {
     return (
         <div className="w-full pt-[10px] max-md:p-[10px] flex flex-col overflow-hidden gap-y-[150px]  ">
             {/* 1 */}
-            <div className="bg-[url(/images/bio/vtorchermet_bg.jpg)] bg-cover gap-y-[150px] flex flex-col px-[30px] py-[150px]">
+            <div className="bg-[url(/images/bio/vtorchermet_bg.jpg)] bg-center bg-cover gap-y-[150px] flex flex-col px-[30px] py-[150px]">
                 <div className="w-full h-full flex justify-between gap-[150px]">
                     <div className="w-[50%] flex justify-end items-start">
                         <div className="flex gap-2 items-end">
