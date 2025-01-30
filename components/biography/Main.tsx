@@ -37,7 +37,7 @@ const Main = () => {
                     </p>
                     <div className="w-[500px] h-full relative">
                         <Image
-                            src={"/images/bio/bio1.jpg"}
+                            src={"/images/bio/bio1.png"}
                             alt="bio1"
                             sizes="auto"
                             className="object-cover"
