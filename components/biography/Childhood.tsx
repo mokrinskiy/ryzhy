@@ -23,7 +23,7 @@ const Childhood = () => {
                 <div className="w-[50%] max-md:w-[85%] min-h-full flex gap-y-[50px] flex-col text-base">
                     <div className="flex gap-2 items-end">
                         <p className="text-accent font-black">часть 1.</p>
-                        <p className="text-5xl">детство</p>
+                        <p className="text-5xl max-lg:text-3xl">детство</p>
                     </div>
                     <div className="space-y-[20px] max-w-[500px] w-full max-md:text-sm">
                         <p>

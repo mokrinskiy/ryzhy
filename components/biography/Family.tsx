@@ -21,7 +21,7 @@ const Family = () => {
                         />
                     </div>
                 </div>
-                <div className="w-[50%]  max-md:w-[85%] max-md:text-sm min-h-full flex gap-y-[50px] max-lg:gap-y-[20px] flex-col text-lg max-lg:text-base">
+                <div className="w-[50%]  max-md:w-[85%] max-md:text-sm min-h-full flex gap-y-[50px] max-lg:gap-y-[0px] flex-col text-lg max-lg:text-base">
                     <div className="flex gap-2 items-end max-md:collapse">
                         <p className="text-accent font-black">часть 3.</p>
                         <p className="text-5xl max-lg:text-3xl">семья</p>

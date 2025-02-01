@@ -5,9 +5,9 @@ const Vtorchermet = () => {
     return (
         <div className="w-full pt-[10px] max-md:p-[10px] flex flex-col overflow-hidden gap-y-[150px] max-lg:gap-y-[50px]">
             {/* 1 */}
-            <div className="bg-[url(/images/bio/vtorchermet_bg.png)] bg-center bg-cover gap-y-[150px] max-lg:gap-y-[50px] flex flex-col px-[30px] max-md:px-[10px] py-[250px] max-lg:py-[100px]">
+            <div className="bg-[url(/images/bio/vtorchermet_bg.png)] bg-center bg-cover gap-y-[150px] max-lg:gap-y-[50px] flex flex-col px-[30px] max-md:px-[10px] pt-[250px] max-lg:pt-[100px]">
                 <div className="w-full h-full flex justify-between gap-[150px] max-lg:gap-[50px] max-md:flex-col max-md:items-end">
-                    <div className="w-[50%] max-md:w-[85%] flex justify-end items-start max-md:justify-center">
+                    <div className="w-[50%] max-md:w-[85%] flex justify-end items-start max-md:justify-start">
                         <div className="flex gap-2 items-end">
                             <p className="text-accent font-black">часть 2.</p>
                             <p className="text-5xl max-lg:text-3xl">
@@ -58,7 +58,7 @@ const Vtorchermet = () => {
                 {/* 2 */}
                 <div className="w-full h-full flex justify-between gap-[150px] max-lg:gap-[50px] max-md:flex-col">
                     <div className="w-[50%] max-md:w-full flex items-end gap-y-[5px] flex-col font-black text-sm">
-                        <div className="max-w-[500px] w-full h-[600px] max-lg:h-[400px] relative">
+                        <div className="max-w-[500px] w-full h-[600px] max-lg:h-[400px] relative max-md:h-[600px]">
                             <Image
                                 src={"/images/bio/bio5.jpg"}
                                 alt="bio1"
@@ -70,7 +70,7 @@ const Vtorchermet = () => {
                         <p className="max-w-[500px] w-full">Борис в детстве</p>
                     </div>
                     <div className="w-[50%] max-md:w-full min-h-full flex gap-y-[5px] flex-col text-sm font-black">
-                        <div className="max-w-[500px] w-full h-[600px] max-lg:h-[400px] relative">
+                        <div className="max-w-[500px] w-full h-[600px] max-lg:h-[400px] relative max-md:h-[600px]">
                             <Image
                                 src={"/images/bio/bio6.jpg"}
                                 alt="bio1"
@@ -83,7 +83,7 @@ const Vtorchermet = () => {
                     </div>
                 </div>
                 {/* 3 */}
-                <div className="w-full max-md:w-[85%] max-md:text-sm h-full flex justify-between gap-[150px] max-lg:gap-[50px] max-md:flex-col">
+                <div className="w-full max-md:w-[85%] max-md:text-sm h-full flex justify-between gap-[150px] max-md:gap-0 max-md:flex-col">
                     <div className="w-[50%] max-md:w-full flex justify-end items-end space-y-[50px] max-lg:space-y-[20px] flex-col">
                         <div className="max-w-[500px] w-full space-y-[20px] max-lg:space-y-[10px]">
                             <p>
@@ -114,13 +114,12 @@ const Vtorchermet = () => {
                             </p>
                         </div>
                     </div>
-                    <div className="w-[50%] max-md:w-full min-h-full flex gap-y-[50px] flex-col text-lg"></div>
+                    <div className="w-[50%] max-md:w-0 max-md:h-0 min-h-full flex gap-y-[50px] flex-col text-lg"></div>
                 </div>
             </div>
-
             {/* 4 */}
-            <div className="w-full h-full max-md:flex-col-reverse flex justify-between gap-[150px] max-lg:gap-[50px] max-md:items-end px-[30px] max-md:px-[10px]">
-                <div className="w-[50%] max-md:w-full min-h-full flex gap-y-[50px] flex-col text-lg"></div>
+            <div className="w-full h-full max-md:flex-col-reverse flex justify-between gap-[150px] max-lg:gap-[50px] max-md:items-end px-[30px] max-md:px-[10px] max-md:gap-0">
+                <div className="w-[50%] min-h-full flex gap-y-[50px] flex-col text-lg max-md:w-0"></div>
                 <div className="w-[50%] max-md:w-[85%] flex items-start space-y-[50px] max-lg:space-y-[20px] flex-col">
                     <div className="max-w-[500px] w-full space-y-[50px] max-lg:space-y-[20px]">
                         <video controls className="w-full">
@@ -163,7 +162,7 @@ const Vtorchermet = () => {
                 </div>
             </div>
             {/* 5 */}
-            <div className="w-full h-full flex justify-between gap-[150px] max-lg:gap-[50px] max-md:flex-col px-[30px] max-md:px-[10px]">
+            <div className="w-full h-full flex justify-between gap-[150px] max-lg:gap-[50px] max-md:flex-col px-[30px] max-md:px-[10px] max-md:gap-[10px]">
                 <div className="w-[50%] max-md:w-[85%] max-md:text-sm flex justify-end items-end space-y-[50px] max-lg:space-y-[20px] flex-col">
                     <div className="max-w-[500px] w-full space-y-[20px] max-lg:space-y-[10px]">
                         <p>
@@ -203,7 +202,7 @@ const Vtorchermet = () => {
                         </p>
                     </div>
                 </div>
-                <div className="w-[50%] max-md:w-full max-md:text-sm flex justify-end space-y-[50px] max-lg:space-y-[20px] flex-col">
+                <div className="w-[50%] max-md:w-[85%] max-md:text-sm flex justify-end space-y-[50px] max-lg:space-y-[20px] flex-col">
                     <div className="max-w-[500px] w-full space-y-[20px] max-lg:space-y-[10px]">
                         <p>
                             В{" "}

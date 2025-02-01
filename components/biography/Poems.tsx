@@ -9,7 +9,7 @@ const Poems = () => {
                 <div className="w-[50%] max-md:w-[85%] flex items-end flex-col space-y-[50px]">
                     <div className="flex gap-2 items-end">
                         <p className="text-accent font-black">часть 5.</p>
-                        <p className="text-5xl">стихи</p>
+                        <p className="text-5xl max-lg:text-3xl">стихи</p>
                     </div>
                     <div className="max-w-[500px] w-full space-y-[20px] max-md:text-sm">
                         <p>
@@ -27,7 +27,7 @@ const Poems = () => {
                             самое главное».
                         </p>
                     </div>
-                    <div className="h-[400px] relative max-w-[500px] w-full">
+                    <div className="h-[400px] relative max-w-[500px] w-full max-md:h-[300px]">
                         <Image
                             src={"/images/bio/bio12.png"}
                             alt="bio1"
@@ -56,7 +56,7 @@ const Poems = () => {
             {/*2*/}
             <div className="w-full h-full flex justify-between gap-[150px] max-lg:gap-[50px] max-md:flex-col max-md:items-end">
                 <div className="w-[50%] flex items-end flex-col gap-y-[5px] text-sm font-black max-md:w-[85%]">
-                    <div className="h-[600px] relative max-w-[500px] w-full">
+                    <div className="h-[600px] relative max-w-[500px] w-full max-md:h-[450px]">
                         <Image
                             src={"/images/bio/bio13.png"}
                             alt="bio1"

@@ -10,7 +10,7 @@ const Exile = () => {
                     <div className="w-[50%] max-md:w-[85%] flex max-md:justify-start justify-end items-end">
                         <div className="flex items-end gap-2">
                             <p className="text-accent font-black">часть 4.</p>
-                            <p className="text-5xl">изгнанник</p>
+                            <p className="text-5xl max-lg:text-3xl">изгнанник</p>
                         </div>
                     </div>
                     <div className="w-[50%] min-h-full flex gap-y-[50px] flex-col text-lg max-md:w-0"></div>
