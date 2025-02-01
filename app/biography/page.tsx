@@ -15,12 +15,25 @@ const page = () => {
     return (
         <div className="space-y-[200px]">
             <Main />
-            <img src="/images/bio/childhood.svg" className="w-full px-[30px]" />
+            <img
+                src="/images/bio/childhood.svg"
+                className="w-full px-[30px] max-md:hidden"
+            />
+            <img
+                src="/images/bio/childhood_m.svg"
+                className="w-full px-[30px] md:hidden"
+            />
+
             <Childhood />
             <img
                 src="/images/bio/vtorchermet.svg"
-                className="w-full px-[30px]"
+                className="w-full px-[30px] max-md:hidden"
             />
+            <img
+                src="/images/bio/vtorchermet_m.svg"
+                className="w-full px-[30px] md:hidden"
+            />
+
             <Vtorchermet />
             <img src="/images/bio/family.svg" className="w-full px-[30px]" />
             <Family />

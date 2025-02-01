@@ -17,7 +17,6 @@ const Header = () => {
         <div className="w-full px-[30px] py-[10px] max-md:px-[10px] flex justify-end fixed z-30  items-center">
             {/* menubar */}
             <div className="flex gap-5">
-                <ModeToggle />
                 <DropdownMenu>
                     <DropdownMenuTrigger>
                         <Button variant="ghost" size="icon">

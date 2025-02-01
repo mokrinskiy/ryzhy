@@ -3,10 +3,10 @@ import React from "react";
 
 const Vtorchermet = () => {
     return (
-        <div className="w-full pt-[10px] max-md:p-[10px] flex flex-col overflow-hidden gap-y-[150px] max-lg:gap-y-[50px]">
+        <div id="2" className="w-full pt-[10px] max-md:p-[10px] flex flex-col overflow-hidden gap-y-[150px] max-lg:gap-y-[50px]">
             {/* 1 */}
             <div className="bg-[url(/images/bio/vtorchermet_bg.png)] bg-center bg-cover gap-y-[150px] max-lg:gap-y-[50px] flex flex-col px-[30px] max-md:px-[10px] pt-[250px] max-lg:pt-[100px]">
-                <div className="w-full h-full flex justify-between gap-[150px] max-lg:gap-[50px] max-md:flex-col max-md:items-end">
+                <div className="w-full h-full flex justify-between gap-[150px] max-lg:gap-[50px] max-md:flex-col max-md:items-end max-md:gap-[20px]">
                     <div className="w-[50%] max-md:w-[85%] flex justify-end items-start max-md:justify-start">
                         <div className="flex gap-2 items-end">
                             <p className="text-accent font-black">часть 2.</p>

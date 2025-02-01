@@ -3,10 +3,10 @@ import React from "react";
 
 const Poems = () => {
     return (
-        <div className="w-full max-lg:gap-[50px] px-[30px] py-[250px] max-md:p-[10px] flex flex-col overflow-hidden bg-center gap-y-[150px] bg-[url(/images/bio/poems_bg.png)] bg-cover">
+        <div id="5" className="w-full max-lg:gap-[50px] px-[30px] py-[250px] max-md:p-[10px] flex flex-col overflow-hidden bg-center gap-y-[150px] bg-[url(/images/bio/poems_bg.png)] bg-cover">
             {/*1*/}
             <div className="w-full h-full flex justify-between gap-[150px] max-lg:gap-[50px]">
-                <div className="w-[50%] max-md:w-[85%] flex items-end flex-col space-y-[50px]">
+                <div className="w-[50%] max-md:w-[85%] flex items-end max-md:items-start flex-col space-y-[50px] max-md:space-y-[20px]">
                     <div className="flex gap-2 items-end">
                         <p className="text-accent font-black">часть 5.</p>
                         <p className="text-5xl max-lg:text-3xl">стихи</p>
@@ -54,7 +54,7 @@ const Poems = () => {
                 <div className="w-[50%] min-h-full flex gap-y-[50px] flex-col text-lg max-md:w-0"></div>
             </div>
             {/*2*/}
-            <div className="w-full h-full flex justify-between gap-[150px] max-lg:gap-[50px] max-md:flex-col max-md:items-end">
+            <div className="w-full h-full flex justify-between gap-[150px] max-lg:gap-[50px] max-md:flex-col max-md:items-end max-md:gap-[20px]">
                 <div className="w-[50%] flex items-end flex-col gap-y-[5px] text-sm font-black max-md:w-[85%]">
                     <div className="h-[600px] relative max-w-[500px] w-full max-md:h-[450px]">
                         <Image

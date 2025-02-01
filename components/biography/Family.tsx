@@ -3,10 +3,10 @@ import React from "react";
 
 const Family = () => {
     return (
-        <div className="w-full px-[30px] max-lg:gap-[50px] max-md:p-[10px] flex flex-col overflow-hidden gap-y-[150px] bg-center bg-[url(/images/bio/family_bg.png)] py-[250px] max-lg:py-[100px] bg-cover">
+        <div id="3" className="w-full px-[30px] max-lg:gap-[50px] max-md:p-[10px] flex flex-col overflow-hidden gap-y-[150px] bg-center bg-[url(/images/bio/family_bg.png)] py-[250px] max-lg:py-[100px] bg-cover">
             {/* 1 */}
-            <div className="w-full h-full flex justify-between gap-[150px] max-lg:gap-[50px] max-md:flex-col max-md:items-end">
-                <div className="w-[50%] max-md:w-[85%] flex justify-end max-md:justify-center max-md:flex-col max-md:gap-[50px]">
+            <div className="w-full h-full flex justify-between gap-[150px] max-lg:gap-[50px] max-md:flex-col max-md:items-end max-md:gap-[20px]">
+                <div className="w-[50%] max-md:w-[85%] flex justify-end max-md:justify-center max-md:flex-col max-md:gap-[20px]">
                     <div className="flex gap-2 items-end md:collapse">
                         <p className="text-accent font-black">часть 3.</p>
                         <p className="text-5xl max-lg:text-3xl">семья</p>

@@ -3,10 +3,10 @@ import React from "react";
 
 const Archive = () => {
     return (
-        <div className="w-full px-[30px] max-md:p-[10px] py-[250px] max-lg:py-[100px] flex flex-col overflow-hidden gap-y-[150px] max-md:gap-y-0 max-lg:gap-y-[50px] bg-center bg-[url(/images/bio/archieve_bg.png)] bg-cover">
+        <div id="6" className="w-full px-[30px] max-md:p-[10px] py-[250px] max-lg:py-[100px] flex flex-col overflow-hidden gap-y-[150px] max-md:gap-y-0 max-lg:gap-y-[50px] bg-center bg-[url(/images/bio/archieve_bg.png)] bg-cover">
             {/*1*/}
             <div className="w-full max-md:items-start h-full flex justify-between gap-[150px] max-lg:gap-[50px] max-md:flex-col">
-                <div className="w-[50%] max-md:w-[85%] flex items-end flex-col space-y-[50px] max-lg:space-y-[20px]">
+                <div className="w-[50%] max-md:w-[85%] flex max-md:items-start items-end flex-col space-y-[50px] max-lg:space-y-[20px]">
                     <div className="flex gap-2 items-end">
                         <p className="text-accent font-black">часть 6.</p>
                         <p className="text-5xl max-lg:text-3xl">архив</p>

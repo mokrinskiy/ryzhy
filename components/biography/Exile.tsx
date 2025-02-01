@@ -3,19 +3,21 @@ import React from "react";
 
 const Exile = () => {
     return (
-        <div className="w-full px-[30px] max-lg:gap-[50px] py-[250px] max-md:p-[10px] flex flex-col overflow-hidden gap-y-[150px] bg-center bg-[url(/images/bio/exile_bg.png)] bg-cover">
+        <div id="4" className="w-full px-[30px] max-lg:gap-[50px] py-[250px] max-md:p-[10px] flex flex-col overflow-hidden gap-y-[150px] bg-center bg-[url(/images/bio/exile_bg.png)] bg-cover">
             {/* 1 */}
-            <div className="space-y-[50px] max-md:w-full max-md:flex max-md:items-end max-md:flex-col">
-                <div className="w-full max-md:w-[85%] max-md:justify-end  h-full flex justify-between gap-[150px] max-lg:gap-[50px] max-md:items-end">
+            <div className="gap-y-[50px] max-md:w-full max-md:flex max-md:items-end max-md:flex-col max-md:gap-y-[20px]">
+                <div className="w-full md:pb-[50px] max-md:w-[85%] max-md:justify-start h-full flex md:justify-between gap-[150px] max-lg:gap-[50px] max-md:items-start max-md:gap-[20px]">
                     <div className="w-[50%] max-md:w-[85%] flex max-md:justify-start justify-end items-end">
                         <div className="flex items-end gap-2">
                             <p className="text-accent font-black">часть 4.</p>
-                            <p className="text-5xl max-lg:text-3xl">изгнанник</p>
+                            <p className="text-5xl max-lg:text-3xl">
+                                изгнанник
+                            </p>
                         </div>
                     </div>
-                    <div className="w-[50%] min-h-full flex gap-y-[50px] flex-col text-lg max-md:w-0"></div>
+                    <div className="w-[50%] min-h-full flex gap-y-[50px] flex-col text-lg max-md:w-0 max-md:hidden"></div>
                 </div>
-                <div className="w-full max-md:items-end h-full flex justify-between gap-[150px] max-lg:gap-[50px] max-md:flex-col">
+                <div className="w-full max-md:items-end h-full flex justify-between gap-[150px] max-lg:gap-[50px] max-md:gap-[20px] max-md:flex-col-reverse">
                     <div className="w-[50%] max-md:w-[85%] flex justify-end items-end">
                         <div className="max-w-[500px] w-full h-[400px] relative">
                             <Image
@@ -27,7 +29,7 @@ const Exile = () => {
                             />
                         </div>
                     </div>
-                    <div className="w-[50%] max-md:w-[85%] min-h-full flex gap-y-[50px] flex-col text-lg max-md:text-sm">
+                    <div className="w-[50%] max-md:w-[85%] min-h-full flex gap-y-[50px] flex-col text-lg max-md:text-sm max-md:gap-[20px]">
                         <div className="max-w-[500px] w-full space-y-[20px]">
                             <p>
                                 «Рыжий был моим единственным собеседником в
