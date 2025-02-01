@@ -6,12 +6,12 @@ const Poems = () => {
         <div className="w-full max-lg:gap-[50px] px-[30px] py-[250px] max-md:p-[10px] flex flex-col overflow-hidden bg-center gap-y-[150px] bg-[url(/images/bio/poems_bg.png)] bg-cover">
             {/*1*/}
             <div className="w-full h-full flex justify-between gap-[150px] max-lg:gap-[50px]">
-                <div className="w-[50%] flex items-end flex-col space-y-[50px]">
+                <div className="w-[50%] max-md:w-[85%] flex items-end flex-col space-y-[50px]">
                     <div className="flex gap-2 items-end">
                         <p className="text-accent font-black">часть 5.</p>
                         <p className="text-5xl">стихи</p>
                     </div>
-                    <div className="max-w-[500px] w-full space-y-[20px]">
+                    <div className="max-w-[500px] w-full space-y-[20px] max-md:text-sm">
                         <p>
                             «Есть два вида литературы: горизонтальная и
                             вертикальная, — говорил Рыжий. — Горизонтальная —
@@ -36,7 +36,7 @@ const Poems = () => {
                             fill={true}
                         />
                     </div>
-                    <div className="space-y-[20px] max-w-[500px] w-full">
+                    <div className="space-y-[20px] max-w-[500px] w-full max-md:text-sm">
                         <p>
                             Он был мастером. «Только кажется, что у него простые
                             стихи, на самом деле это сложная, высокопробная
@@ -51,11 +51,11 @@ const Poems = () => {
                         </p>
                     </div>
                 </div>
-                <div className="w-[50%] min-h-full flex gap-y-[50px] flex-col text-lg"></div>
+                <div className="w-[50%] min-h-full flex gap-y-[50px] flex-col text-lg max-md:w-0"></div>
             </div>
             {/*2*/}
-            <div className="w-full h-full flex justify-between gap-[150px] max-lg:gap-[50px]">
-                <div className="w-[50%] flex items-end flex-col gap-y-[5px] text-sm font-black">
+            <div className="w-full h-full flex justify-between gap-[150px] max-lg:gap-[50px] max-md:flex-col max-md:items-end">
+                <div className="w-[50%] flex items-end flex-col gap-y-[5px] text-sm font-black max-md:w-[85%]">
                     <div className="h-[600px] relative max-w-[500px] w-full">
                         <Image
                             src={"/images/bio/bio13.png"}
@@ -69,8 +69,8 @@ const Poems = () => {
                         Борис Рыжий на вручении премии «Антибукер»
                     </p>
                 </div>
-                <div className="w-[50%] min-h-full flex gap-y-[50px] flex-col text-lg">
-                    <div className="max-w-[500px] w-full space-y-[20px]">
+                <div className="w-[50%] min-h-full flex gap-y-[50px] flex-col text-lg max-md:w-[85%]">
+                    <div className="max-w-[500px] w-full space-y-[20px] max-md:text-sm">
                         <p className="max-w-[500px] w-full">
                             Александр Кушнер главным в поэзии Рыжего называет
                             сочетание высокой поэтической «музыки» с низкой

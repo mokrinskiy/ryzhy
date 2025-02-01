@@ -5,9 +5,9 @@ const Childhood = () => {
     return (
         <div className="w-full px-[30px] py-[250px] max-md:p-[10px] flex flex-col overflow-hidden max-lg:gap-[50px] gap-y-[150px] bg-center bg-[url(/images/bio/childhood_bg.png)] bg-cover">
             {/* 1 */}
-            <div className="w-full h-full flex justify-between gap-[150px] max-lg:gap-[50px]">
-                <div className="w-[50%] flex justify-end items-end flex-col text-sm font-black">
-                    <div className="max-w-[500px] w-full h-[400px] relative">
+            <div className="w-full h-full max-md:items-end flex justify-between gap-[150px] max-lg:gap-[50px] max-md:flex-col-reverse">
+                <div className="w-[50%] max-md:w-full max-md:items-center flex justify-end items-end flex-col text-sm font-black">
+                    <div className="max-w-[500px] w-full h-[400px] relative max-md:h-[250px]">
                         <Image
                             src={"/images/bio/bio2.jpg"}
                             alt="bio1"
@@ -20,17 +20,17 @@ const Childhood = () => {
                         Маргарита и Борис Рыжие
                     </p>
                 </div>
-                <div className="w-[50%] min-h-full flex gap-y-[50px] flex-col text-base">
+                <div className="w-[50%] max-md:w-[85%] min-h-full flex gap-y-[50px] flex-col text-base">
                     <div className="flex gap-2 items-end">
                         <p className="text-accent font-black">часть 1.</p>
                         <p className="text-5xl">детство</p>
                     </div>
-                    <div className="space-y-[20px] max-w-[500px] w-full">
+                    <div className="space-y-[20px] max-w-[500px] w-full max-md:text-sm">
                         <p>
                             В «Евгении Онегине», который стоял в библиотеке
                             Рыжих, было записано четверостишие:
                         </p>
-                        <p className="font-black text-lg">
+                        <p className="font-black text-lg max-md:text-base">
                             «Масти разной шел поэт, От Белого до Черного. Чтобы
                             полный был синклит, Не хватает Рыжего».
                         </p>
@@ -50,9 +50,9 @@ const Childhood = () => {
                 </div>
             </div>
             {/* 2 */}
-            <div className="w-full h-full flex justify-between gap-[150px] max-lg:gap-[50px]">
-                <div className="w-[50%] flex justify-end items-end space-y-[50px] flex-col">
-                    <div className="max-w-[500px] w-full space-y-[20px]">
+            <div className="w-full h-full flex justify-between gap-[150px] max-lg:gap-[50px] max-md:items-start max-md:flex-col">
+                <div className="w-[50%] max-md:w-[85%] flex justify-end items-end space-y-[50px] flex-col">
+                    <div className="max-w-[500px] w-full space-y-[20px] max-md:text-sm ">
                         <p>
                             Маргарита была старше Бориса на два года. В детстве
                             её с матерью пленили немцы и угнали в Германию.
@@ -76,7 +76,7 @@ const Childhood = () => {
                         </p>
                     </div>
                     <div className="flex flex-col gap-y-[5px] items-end text-sm font-black w-full">
-                        <div className="max-w-[500px] w-full h-[400px] relative">
+                        <div className="max-w-[500px] w-full h-[400px] relative max-md:h-[250px]">
                             <Image
                                 src={"/images/bio/bio3.jpg"}
                                 alt="bio1"
@@ -87,7 +87,7 @@ const Childhood = () => {
                         </div>
                         <p>Борис с мамой и сестрами</p>
                     </div>
-                    <div className="space-y-[20px] max-w-[500px] w-full">
+                    <div className="space-y-[20px] max-w-[500px] w-full max-md:text-sm">
                         <p>
                             Однажды маленький Боря играл в машинку, налив
                             «бензин» в стеклянную банку. Споткнувшись, он упал и
@@ -106,7 +106,7 @@ const Childhood = () => {
                         </p>
                     </div>
                 </div>
-                <div className="w-[50%] min-h-full flex gap-y-[50px] flex-col text-lg"></div>
+                <div className="w-[50%] min-h-full flex md:visible gap-y-[50px] flex-col text-lg"></div>
             </div>
         </div>
     );

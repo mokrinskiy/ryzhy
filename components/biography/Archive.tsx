@@ -5,13 +5,13 @@ const Archive = () => {
     return (
         <div className="w-full px-[30px] max-md:p-[10px] py-[250px] max-lg:py-[100px] flex flex-col overflow-hidden gap-y-[150px] max-lg:gap-y-[50px] bg-center bg-[url(/images/bio/archieve_bg.png)] bg-cover">
             {/*1*/}
-            <div className="w-full h-full flex justify-between gap-[150px] max-lg:gap-[50px] max-md:flex-col">
-                <div className="w-[50%] max-md:w-full flex items-end flex-col space-y-[50px] max-lg:space-y-[20px]">
+            <div className="w-full max-md:items-start h-full flex justify-between gap-[150px] max-lg:gap-[50px] max-md:flex-col">
+                <div className="w-[50%] max-md:w-[85%] flex items-end flex-col space-y-[50px] max-lg:space-y-[20px]">
                     <div className="flex gap-2 items-end">
                         <p className="text-accent font-black">часть 6.</p>
                         <p className="text-5xl max-lg:text-3xl">архив</p>
                     </div>
-                    <div className="max-w-[500px] w-full space-y-[20px] max-lg:space-y-[10px]">
+                    <div className="max-w-[500px] w-full space-y-[20px] max-lg:space-y-[10px] max-md:text-sm">
                         <p>
                             7 мая 2001 года в квартире своих родителей в
                             Екатеринбурге Борис покончил жизнь самоубийством. Он
@@ -40,11 +40,11 @@ const Archive = () => {
                         </p>
                     </div>
                 </div>
-                <div className="w-[50%] max-md:w-full min-h-full flex gap-y-[50px] flex-col text-lg"></div>
+                <div className="w-[50%] min-h-full flex gap-y-[50px] flex-col text-lg max-md:w-0"></div>
             </div>
             {/* 2 */}
             <div className="w-full h-full flex justify-center">
-                <div className="max-w-[1150px] w-full h-[700px] max-lg:h-[400px] relative">
+                <div className="max-w-[1150px] w-full h-[700px] max-lg:h-[400px] relative max-md:h-[300px]">
                     <Image
                         src={"/images/bio/bio15.png"}
                         alt="bio1"
@@ -55,10 +55,10 @@ const Archive = () => {
                 </div>
             </div>
             {/* 3 */}
-            <div className="w-full h-full flex justify-between gap-[150px] max-lg:gap-[50px] max-md:flex-col">
-                <div className="w-[50%] max-md:w-full min-h-full flex gap-y-[50px] flex-col text-lg"></div>
-                <div className="w-[50%] max-md:w-full flex-col space-y-[50px] max-lg:space-y-[20px]">
-                    <div className="max-w-[500px] w-full space-y-[50px] max-lg:space-y-[20px]">
+            <div className="w-full h-full flex justify-between gap-[150px] max-lg:gap-[50px] max-md:flex-col max-md:items-end">
+                <div className="w-[50%] min-h-full flex gap-y-[50px] flex-col text-lg max-md:w-0"></div>
+                <div className="w-[50%] flex-col space-y-[50px] max-lg:space-y-[20px] max-md:w-[85%]">
+                    <div className="max-w-[500px] w-full space-y-[50px] max-lg:space-y-[20px] max-md:text-sm">
                         <div className="space-y-[20px] max-lg:space-y-[10px]">
                             <p className="font-black">
                                 Вадим Курочкин, близкий университетский друг
