@@ -3,18 +3,20 @@ import React from "react";
 
 const Vtorchermet = () => {
     return (
-        <div className="w-full pt-[10px] max-md:p-[10px] flex flex-col overflow-hidden gap-y-[150px]  ">
+        <div className="w-full pt-[10px] max-md:p-[10px] flex flex-col overflow-hidden gap-y-[150px] max-lg:gap-y-[50px]">
             {/* 1 */}
-            <div className="bg-[url(/images/bio/vtorchermet_bg.jpg)] bg-center bg-cover gap-y-[150px] flex flex-col px-[30px] py-[150px]">
-                <div className="w-full h-full flex justify-between gap-[150px]">
-                    <div className="w-[50%] flex justify-end items-start">
+            <div className="bg-[url(/images/bio/vtorchermet_bg.png)] bg-center bg-cover gap-y-[150px] max-lg:gap-y-[50px] flex flex-col px-[30px] max-md:px-[10px] py-[250px] max-lg:py-[100px]">
+                <div className="w-full h-full flex justify-between gap-[150px] max-lg:gap-[50px] max-md:flex-col">
+                    <div className="w-[50%] max-md:w-full flex justify-end items-start max-md:justify-center">
                         <div className="flex gap-2 items-end">
                             <p className="text-accent font-black">часть 2.</p>
-                            <p className="text-5xl">вторчермет</p>
+                            <p className="text-5xl max-lg:text-3xl">
+                                вторчермет
+                            </p>
                         </div>
                     </div>
-                    <div className="w-[50%] min-h-full flex gap-y-[50px] flex-col text-lg">
-                        <div className="w-[500px] h-[600px] relative">
+                    <div className="w-[50%] max-md:w-full min-h-full flex gap-y-[50px] max-lg:gap-y-[20px] flex-col text-lg max-lg:text-base">
+                        <div className="max-w-[500px] w-full h-[600px] max-lg:h-[400px] relative">
                             <Image
                                 src={"/images/bio/bio4.jpg"}
                                 alt="bio1"
@@ -23,7 +25,7 @@ const Vtorchermet = () => {
                                 fill={true}
                             />
                         </div>
-                        <div className="w-[500px] space-y-[20px] text-lg">
+                        <div className="max-w-[500px] w-full space-y-[20px] max-lg:space-y-[10px] text-lg max-lg:text-base">
                             <p>
                                 Удар, удар, снова удар. На боксерском ринге
                                 тренируются двое подтянутых 46-летних мужчин.
@@ -44,18 +46,19 @@ const Vtorchermet = () => {
                             </p>
                             <p>
                                 Рыжего Манин запомнил. Он выделялся сразу по
-                                нескольким причинам: фамилия, шрам, а еще —
-                                интерес к боксу. По словам близких, Борис даже
-                                одержал победу на городских юношеских
+                                нескольким причинам: фамилия,
+                                <b className="font-black text-accent"> шрам</b>,
+                                а еще — интерес к боксу. По словам близких,
+                                Борис даже одержал победу на городских юношеских
                                 соревнованиях, но потом решил уйти из секции.
                             </p>
                         </div>
                     </div>
                 </div>
                 {/* 2 */}
-                <div className="w-full h-full flex justify-between gap-[150px]">
-                    <div className="w-[50%] flex justify-end items-start">
-                        <div className="w-[500px] h-[600px] relative">
+                <div className="w-full h-full flex justify-between gap-[150px] max-lg:gap-[50px] max-md:flex-col">
+                    <div className="w-[50%] max-md:w-full flex items-end gap-y-[5px] flex-col font-black text-sm">
+                        <div className="max-w-[500px] w-full h-[600px] max-lg:h-[400px] relative">
                             <Image
                                 src={"/images/bio/bio5.jpg"}
                                 alt="bio1"
@@ -64,9 +67,10 @@ const Vtorchermet = () => {
                                 fill={true}
                             />
                         </div>
+                        <p className="max-w-[500px] w-full">Борис в детстве</p>
                     </div>
-                    <div className="w-[50%] min-h-full flex gap-y-[50px] flex-col text-lg">
-                        <div className="w-[500px] h-[600px] relative">
+                    <div className="w-[50%] max-md:w-full min-h-full flex gap-y-[5px] flex-col text-sm font-black">
+                        <div className="max-w-[500px] w-full h-[600px] max-lg:h-[400px] relative">
                             <Image
                                 src={"/images/bio/bio6.jpg"}
                                 alt="bio1"
@@ -75,43 +79,56 @@ const Vtorchermet = () => {
                                 fill={true}
                             />
                         </div>
-                    </div>
-                </div>  
-            </div>
-
-            {/* 3 */}
-            <div className="w-full h-full flex justify-between gap-[150px]">
-                <div className="w-[50%] flex justify-end items-end space-y-[50px] flex-col">
-                    <div className="w-[500px] space-y-[20px]">
-                        <p>
-                            В Свердловске Борис Петрович стал главным геофизиком
-                            Уральского геологического управления, затем —
-                            директором Института геофизики Уральского отделения
-                            Академии наук. За ним каждое утро приезжала машина с
-                            личным шофером. Дома была большая библиотека,
-                            которую Рыжие постоянно пополняли, записываясь в
-                            очередь на покупку книг.
-                        </p>
-                        <p>
-                            В единственном доступном видеоинтервью Рыжий
-                            показывает журналистам свой двор: «Это мой двор, мой
-                            дом, где я прожил лучшую половину своей жизни. Я
-                            прожил тут десять лет. Здесь ничего не изменилось,
-                            все по-старому, как было. Прибавились решетки на
-                            окнах и надписи стали не по-русски на стенах, а
-                            по-английски. Что еще… Тут поумирала, наверное,
-                            большая часть моих любимых людей — в основном от
-                            наркотиков. Те, кого я любил и кого я уважал».
-                        </p>
+                        <p>Борис с отцом на демонстрации</p>
                     </div>
                 </div>
-                <div className="w-[50%] min-h-full flex gap-y-[50px] flex-col text-lg"></div>
+                {/* 3 */}
+                <div className="w-full h-full flex justify-between gap-[150px] max-lg:gap-[50px] max-md:flex-col">
+                    <div className="w-[50%] max-md:w-full flex justify-end items-end space-y-[50px] max-lg:space-y-[20px] flex-col">
+                        <div className="max-w-[500px] w-full space-y-[20px] max-lg:space-y-[10px]">
+                            <p>
+                                В Свердловске Борис Петрович стал главным
+                                геофизиком Уральского геологического управления,
+                                затем — директором Института геофизики
+                                Уральского отделения Академии наук. За ним
+                                каждое утро приезжала машина с личным шофером.
+                                Дома была большая библиотека, которую Рыжие
+                                постоянно пополняли, записываясь в очередь на
+                                покупку книг.
+                            </p>
+                            <p>
+                                В единственном доступном видеоинтервью Рыжий
+                                показывает журналистам свой двор: «Это мой двор,
+                                мой дом, где я прожил лучшую половину своей
+                                жизни. Я прожил тут десять лет. Здесь ничего не
+                                изменилось, все по-старому, как было.
+                                Прибавились решетки на окнах и надписи стали не
+                                по-русски на стенах, а по-английски. Что еще…
+                                Тут поумирала, наверное, большая часть моих{" "}
+                                <b className="font-black text-accent">
+                                    {" "}
+                                    любимых
+                                </b>{" "}
+                                людей — в основном от наркотиков. Те, кого я
+                                любил и кого я уважал».
+                            </p>
+                        </div>
+                    </div>
+                    <div className="w-[50%] max-md:w-full min-h-full flex gap-y-[50px] flex-col text-lg"></div>
+                </div>
             </div>
+
             {/* 4 */}
-            <div className="w-full h-full flex justify-between gap-[150px]">
-                <div className="w-[50%] min-h-full flex gap-y-[50px] flex-col text-lg"></div>
-                <div className="w-[50%] flex items-start space-y-[50px] flex-col">
-                    <div className="w-[500px] space-y-[20px]">
+            <div className="w-full h-full flex justify-between gap-[150px] max-lg:gap-[50px] max-md:flex-col px-[30px] max-md:px-[10px]">
+                <div className="w-[50%] max-md:w-full min-h-full flex gap-y-[50px] flex-col text-lg"></div>
+                <div className="w-[50%] max-md:w-full flex items-start space-y-[50px] max-lg:space-y-[20px] flex-col">
+                    <div className="max-w-[500px] w-full space-y-[50px] max-lg:space-y-[20px]">
+                        <video controls className="w-full">
+                            <source
+                                src="/video/vtorchermet.mp4"
+                                type="video/mp4"
+                            />
+                        </video>
                         <p className="font-black">
                             «Я десять лет живу в доме, где 90 процентов жильцов
                             — бывшие заключенные, — говорил Рыжий уже в другом
@@ -135,7 +152,7 @@ const Vtorchermet = () => {
                 </div>
             </div>
             <div className="w-full h-full flex justify-center">
-                <div className="w-[1150px] h-[700px] relative">
+                <div className="max-w-[1150px] w-full h-[700px] max-lg:h-[400px] relative">
                     <Image
                         src={"/images/bio/mask.png"}
                         alt="bio1"
@@ -146,9 +163,9 @@ const Vtorchermet = () => {
                 </div>
             </div>
             {/* 5 */}
-            <div className="w-full h-full flex justify-between gap-[150px]">
-                <div className="w-[50%] flex justify-end items-end space-y-[50px] flex-col">
-                    <div className="w-[500px] space-y-[20px]">
+            <div className="w-full h-full flex justify-between gap-[150px] max-lg:gap-[50px] max-md:flex-col px-[30px] max-md:px-[10px]">
+                <div className="w-[50%] max-md:w-full flex justify-end items-end space-y-[50px] max-lg:space-y-[20px] flex-col">
+                    <div className="max-w-[500px] w-full space-y-[20px] max-lg:space-y-[10px]">
                         <p>
                             «Я знала мальчишек [с которыми гулял Боря]: они
                             часто приходили к нам домой, — говорит Ольга. —
@@ -161,14 +178,19 @@ const Vtorchermet = () => {
                         <p>
                             Обычный вечер у Рыжих: чаепитие, Боря гуляет. Вдруг
                             стук в дверь. «Открываем — там стоит милиционер и
-                            Боря. Милиционер помялся и ушел. Оказалось, что Боря
-                            с компанией сидел во дворе. К ним подошел
-                            милиционер, потребовал вывернуть карманы. Все
-                            вывернули, а Боря — нет. “Тогда пойдем к твоим
-                            родителям”. — “Пойдем”. Возможно, милиционер думал,
-                            что Боря испугается, но к моменту, когда они дошли
-                            до третьего этажа, милиционер уже сам, видимо, был
-                            не рад происходящему», — вспоминает Ольга.
+                            Боря.{" "}
+                            <b className="font-black text-accent">
+                                {" "}
+                                Милиционер
+                            </b>{" "}
+                            помялся и ушел. Оказалось, что Боря с компанией
+                            сидел во дворе. К ним подошел милиционер, потребовал
+                            вывернуть карманы. Все вывернули, а Боря — нет.
+                            “Тогда пойдем к твоим родителям”. — “Пойдем”.
+                            Возможно, милиционер думал, что Боря испугается, но
+                            к моменту, когда они дошли до третьего этажа,
+                            милиционер уже сам, видимо, был не рад
+                            происходящему», — вспоминает Ольга.
                         </p>
                         <p>
                             Учился младший Рыжий тоже на Вторчермете, в 106-й
@@ -181,15 +203,20 @@ const Vtorchermet = () => {
                         </p>
                     </div>
                 </div>
-                <div className="w-[50%] flex justify-end space-y-[50px] flex-col">
-                    <div className="w-[500px] space-y-[20px]">
+                <div className="w-[50%] max-md:w-full flex justify-end space-y-[50px] max-lg:space-y-[20px] flex-col">
+                    <div className="max-w-[500px] w-full space-y-[20px] max-lg:space-y-[10px]">
                         <p>
-                            В девяностые в городе все стало только хуже:
-                            наркотики, драки, смерти. На улице могли избить за
-                            адидасовский костюм, сорвать меховую шапку с головы.
-                            В чужой двор стоило заходить, только если знаешь
-                            местных. Но парень из интеллигентной семьи на
-                            Вторчермете не боялся никого.
+                            В{" "}
+                            <b className="font-black text-accent">
+                                {" "}
+                                девяностые
+                            </b>{" "}
+                            в городе все стало только хуже: наркотики, драки,
+                            смерти. На улице могли избить за адидасовский
+                            костюм, сорвать меховую шапку с головы. В чужой двор
+                            стоило заходить, только если знаешь местных. Но
+                            парень из интеллигентной семьи на Вторчермете не
+                            боялся никого.
                         </p>
                     </div>
                 </div>

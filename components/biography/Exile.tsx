@@ -3,10 +3,10 @@ import React from "react";
 
 const Exile = () => {
     return (
-        <div className="w-full px-[30px] pt-[10px] max-md:p-[10px] flex flex-col overflow-hidden gap-y-[150px] bg-center bg-[url(/images/bio/exile_bg.png)] py-[150px] bg-cover">
+        <div className="w-full px-[30px] max-lg:gap-[50px] py-[250px] max-md:p-[10px] flex flex-col overflow-hidden gap-y-[150px] bg-center bg-[url(/images/bio/exile_bg.png)] bg-cover">
             {/* 1 */}
             <div className="space-y-[50px]">
-                <div className="w-full h-full flex justify-between gap-[150px]">
+                <div className="w-full h-full flex justify-between gap-[150px] max-lg:gap-[50px]">
                     <div className="w-[50%] flex justify-end items-end">
                         <div className="flex gap-2 items-end">
                             <p className="text-accent font-black">часть 4.</p>
@@ -15,9 +15,9 @@ const Exile = () => {
                     </div>
                     <div className="w-[50%] min-h-full flex gap-y-[50px] flex-col text-lg"></div>
                 </div>
-                <div className="w-full h-full flex justify-between gap-[150px]">
+                <div className="w-full h-full flex justify-between gap-[150px] max-lg:gap-[50px]">
                     <div className="w-[50%] flex justify-end items-end">
-                        <div className="w-[500px] h-[400px] relative">
+                        <div className="max-w-[500px] w-full h-[400px] relative">
                             <Image
                                 src={"/images/bio/bio10.png"}
                                 alt="bio1"
@@ -28,14 +28,18 @@ const Exile = () => {
                         </div>
                     </div>
                     <div className="w-[50%] min-h-full flex gap-y-[50px] flex-col text-lg">
-                        <div className="w-[500px] space-y-[20px]">
-                            <p className="w-[500px]">
+                        <div className="max-w-[500px] w-full space-y-[20px]">
+                            <p>
                                 «Рыжий был моим единственным собеседником в
                                 Екатеринбурге, который мог наизусть прочесть,
                                 например, Батюшкова, — говорит близкий друг
                                 Бориса поэт Олег Дозморов. — Я филолог, но читал
-                                русской поэзии меньше, чем Борис. Хулиганом с
-                                задней парты он точно не был. Конечно, он мог
+                                русской поэзии меньше, чем Борис.
+                                <b className="font-black text-accent">
+                                    {" "}
+                                    Хулиганом
+                                </b>
+                                с задней парты он точно не был. Конечно, он мог
                                 кому-то двинуть, ответить на хамство, но это не
                                 было его сутью — скорее, одна из его масок.
                                 Когда он общался с литераторами, интеллигенцией,
@@ -46,9 +50,9 @@ const Exile = () => {
                 </div>
             </div>
             {/* 3 */}
-            <div className="w-full h-full flex justify-between gap-[150px]">
+            <div className="w-full h-full flex justify-between gap-[150px] max-lg:gap-[50px]">
                 <div className="w-[50%] flex justify-end items-end space-y-[50px] flex-col">
-                    <div className="w-[500px] space-y-[20px]">
+                    <div className="max-w-[500px] w-full space-y-[20px]">
                         <p>
                             По мнению Дозморова, своим среди интеллигенции Борис
                             не был — не хватало «лоска»: «Но и в среде “оторви и
@@ -73,7 +77,7 @@ const Exile = () => {
             </div>
             {/* 4 */}
             <div className="w-full h-full flex justify-center">
-                <div className="w-[1150px] h-[700px] relative">
+                <div className="max-w-[1150px] w-full h-[700px] relative max-md:h-[400px]">
                     <Image
                         src={"/images/bio/bio11.png"}
                         alt="bio1"
@@ -84,10 +88,10 @@ const Exile = () => {
                 </div>
             </div>
             {/* 5 */}
-            <div className="w-full h-full flex justify-between gap-[150px]">
+            <div className="w-full h-full flex justify-between gap-[150px] max-lg:gap-[50px]">
                 <div className="w-[50%] min-h-full flex gap-y-[50px] flex-col text-lg"></div>
                 <div className="w-[50%] flex space-y-[50px] flex-col">
-                    <div className="w-[500px] space-y-[20px]">
+                    <div className="max-w-[500px] w-full space-y-[20px]">
                         <p>
                             «Мы часто делились воспоминаниями из детства,
                             говорили о людях, рядом с которыми жили, о смертях,
@@ -95,7 +99,8 @@ const Exile = () => {
                             мне сказал: “Знаешь, Олег, в чем разница между мной
                             и тобой? В том, что я этих людей любил”. Для меня
                             действительно эти люди были на уровне “анекдотов”, а
-                            Боря по-настоящему сострадал. Он чувствовал вину
+                            Боря по-настоящему сострадал. Он чувствовал
+                            <b className="font-black text-accent"> вину </b>
                             перед ними. Он не просто всех знал на Вторчермете —
                             он всех там жалел. Вся его сложность, ранимость,
                             совестливость выразилась в стихах».

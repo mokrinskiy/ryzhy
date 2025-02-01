@@ -17,7 +17,7 @@ const Main = () => {
             </div>
             <div className="w-full h-full flex justify-between gap-[150px]">
                 <div className="w-[50%] flex justify-end items-end">
-                    <div className="mr-[50px] text-xl flex justify-end flex-col">
+                    <div className=" text-xl flex justify-end flex-col">
                         <p>01. детство</p>
                         <p>02. вторчермет</p>
                         <p>03. семья</p>
@@ -27,7 +27,7 @@ const Main = () => {
                     </div>
                 </div>
                 <div className="w-[50%] min-h-full flex gap-y-[50px] flex-col text-lg">
-                    <p className="w-[500px]">
+                    <p className="w-full max-w-[500px]">
                         РЫЖИЙ начал писать стихи в юности и вскоре стал заметной
                         фигурой. Его творчество сочетает классическую форму
                         стихосложения с{" "}
@@ -35,7 +35,7 @@ const Main = () => {
                         городской тематикой, передавая атмосферу 1990-х годов в
                         России.
                     </p>
-                    <div className="w-[500px] h-full relative">
+                    <div className="h-full relative w-full max-w-[500px]">
                         <Image
                             src={"/images/bio/bio1.png"}
                             alt="bio1"
