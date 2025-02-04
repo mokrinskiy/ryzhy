@@ -3,7 +3,10 @@ import React from "react";
 
 const Exile = () => {
     return (
-        <div id="4" className="w-full px-[30px] max-lg:gap-[50px] py-[250px] max-md:p-[10px] flex flex-col overflow-hidden gap-y-[150px] bg-center bg-[url(/images/bio/exile_bg.png)] bg-cover">
+        <div
+            id="4"
+            className="w-full px-[30px] max-lg:gap-[50px] py-[250px] max-md:p-[10px] flex flex-col overflow-hidden gap-y-[150px] bg-center bg-[url(/images/bio/exile_bg.png)] bg-cover"
+        >
             {/* 1 */}
             <div className="gap-y-[50px] max-md:w-full max-md:flex max-md:items-end max-md:flex-col max-md:gap-y-[20px]">
                 <div className="w-full md:pb-[50px] max-md:w-[85%] max-md:justify-start h-full flex md:justify-between gap-[150px] max-lg:gap-[50px] max-md:items-start max-md:gap-[20px]">

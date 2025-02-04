@@ -33,7 +33,6 @@ const page = () => {
                 src="/images/bio/vtorchermet_m.svg"
                 className="w-full px-[30px] md:hidden"
             />
-
             <Vtorchermet />
             <img src="/images/bio/family.svg" className="w-full px-[30px]" />
             <Family />

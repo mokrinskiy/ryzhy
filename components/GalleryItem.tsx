@@ -12,42 +12,60 @@ import {
 interface GalleryItemProps {
     src: string;
     alt: string;
-    id: number;
     type: string;
 }
 
-const GalleryItem: React.FC<GalleryItemProps> = ({ src, alt, id, type }) => {
+const GalleryItem: React.FC<GalleryItemProps> = ({ src, alt, type }) => {
     return (
         <Dialog>
             <DialogTrigger asChild>
-                <div
-                    key={id}
-                    className={`shadow-md flex items-center ${
-                        type === "landscape" ? "" : "aspect-[3/4]"
-                    }`}
-                >
-                    <Image
-                        src={src}
-                        alt={alt}
-                        layout="responsive"
-                        width={450}
-                        height={650}
-                        objectFit="cover"
-                    />
-                </div>
+                {type === "landscape" ? (
+                    <div className="max-w-[500px] w-full h-[300px] relative max-lg:h-[250px] max-md:h-[250px]">
+                        <Image
+                            src={src}
+                            alt={alt}
+                            sizes="auto"
+                            className="object-cover aspect-video"
+                            fill={true}
+                        />
+                    </div>
+                ) : (
+                    <div className="max-w-[500px] w-full h-[600px] relative max-lg:h-[500px] max-md:h-[500px]">
+                        <Image
+                            src={src}
+                            alt={alt}
+                            sizes="auto"
+                            className="object-cover aspect-video"
+                            fill={true}
+                        />
+                    </div>
+                )}
             </DialogTrigger>
             <DialogContent>
                 <DialogHeader>
                     <DialogTitle></DialogTitle>
                     <DialogDescription>
-                        <Image
-                            src={src}
-                            alt={alt}
-                            layout="responsive"
-                            width={450}
-                            height={650}
-                            objectFit="cover"
-                        />
+                        {type === "landscape" ? (
+                            <div className="max-w-[500px] w-full h-[300px] relative max-lg:h-[250px] max-md:h-[250px]">
+                                <Image
+                                    src={src}
+                                    alt={alt}
+                                    sizes="auto"
+                                    className="object-cover aspect-video"
+                                    fill={true}
+                                />
+                            </div>
+                        ) : (
+                            <div className="max-w-[500px] w-full h-[600px] relative max-lg:h-[500px] max-md:h-[500px]">
+                                <Image
+                                    src={src}
+                                    alt={alt}
+                                    sizes="auto"
+                                    className="object-cover aspect-video"
+                                    fill={true}
+                                />
+                            </div>
+                        )}
                     </DialogDescription>
                 </DialogHeader>
             </DialogContent>
