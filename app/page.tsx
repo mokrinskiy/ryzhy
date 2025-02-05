@@ -39,9 +39,9 @@ export default function Home() {
                     <p>1974 — 2001</p>
                 </div>
             </div>
-            <div className="w-full justify-between flex items-center max-lg:items-start px-[5%] max-md:px-[30px] py-[10px] max-lg:flex-col max-md:mt-[100px]">
-                <h1 className="text-4xl md:hidden">БОРИС РЫЖИЙ</h1>
-                <div className="md:hidden w-full flex  flex-col mt-[10px]">
+            <div className="w-full justify-between max-md:px-[5px] flex items-center max-lg:items-start md:px-[5%] py-[10px] max-lg:flex-col max-md:mt-[100px]">
+                <img src="images/main_text.svg" alt="" />
+                <div className="md:hidden w-full flex  flex-col mt-[20px]">
                     <p className="font-black text-accent max-md:text-sm">
                         [ русский поэт ]
                     </p>
