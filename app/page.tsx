@@ -5,8 +5,8 @@ import Link from "next/link";
 
 export default function Home() {
     return (
-        <div className="w-full h-screen px-[30px] py-[10px] max-md:p-[10px] flex flex-col justify-between overflow-hidden">
-            <div className="text-5xl z-10">
+        <div className="w-full h-screen max-lg:h-auto px-[30px] py-[10px] max-md:p-[10px] flex flex-col md:justify-between overflow-hidden">
+            <div className="text-5xl z-10 max-lg:text-3xl max-md:text-base">
                 <p>“В России расстаются навсегда.</p>
                 <div className="w-full flex justify-center">
                     <p>В России друг от друга города</p>
@@ -21,7 +21,7 @@ export default function Home() {
                     <p>БориС РЫЖИЙ</p>
                 </div>
             </div>
-            <div className="relative bottom-20 z-0 left-0 right-0 m-auto my-0 h-[430px] w-[650px]">
+            <div className="relative bottom-20 z-0 left-0 right-0 m-auto my-0 max-md:top-[50px] h-[430px] w-[650px] max-md:h-[280px] max-md:w-[400px]">
                 <Image
                     src={"/images/main_image.png"}
                     alt="main_image"
@@ -30,18 +30,33 @@ export default function Home() {
                     sizes="auto"
                 />
             </div>
-            <div className="absolute top-[50%] left-[10%]">
-                <p className="font-black text-accent">[ русский поэт ]</p>
-                <div className="flex gap-2 items-end">
+            <div className="absolute top-[50%] left-[10%] max-md:top-[28%] max-md:hidden">
+                <p className="font-black text-accent max-md:text-sm">
+                    [ русский поэт ]
+                </p>
+                <div className="flex gap-2 items-end max-md:text-sm">
                     <p className="text-gray text-sm">годы:</p>
                     <p>1974 — 2001</p>
                 </div>
             </div>
-            <div className="w-full justify-between flex items-center px-[5%] py-[10px]">
-                <div className="flex justify-between text-xl gap-x-5">
+            <div className="w-full justify-between flex items-center max-lg:items-start px-[5%] max-md:px-[30px] py-[10px] max-lg:flex-col max-md:mt-[100px]">
+                <h1 className="text-4xl md:hidden">БОРИС РЫЖИЙ</h1>
+                <div className="md:hidden w-full flex  flex-col mt-[10px]">
+                    <p className="font-black text-accent max-md:text-sm">
+                        [ русский поэт ]
+                    </p>
+                    <div className="flex gap-2 items-end max-md:text-sm">
+                        <p className="text-gray text-sm">годы:</p>
+                        <p>1974 — 2001</p>
+                    </div>
+                </div>
+                <div className="flex justify-between text-xl gap-x-5 max-lg:flex-col max-md:mt-[20px]">
                     {menu_links.map((item, id) => (
                         <Link key={id} href={item.link}>
-                            <Button variant="ghost" className="text-xl">
+                            <Button
+                                variant="ghost"
+                                className="text-xl max-md:text-base max-md:pl-0"
+                            >
                                 {item.title}
                             </Button>
                         </Link>
@@ -50,7 +65,7 @@ export default function Home() {
                 <div className="flex items-center min-w-[100px] w-auto h-auto">
                     <Button
                         variant="ghost"
-                        className="text-xl hover:text-transparent"
+                        className="text-xl hover:text-transparent max-md:pl-0"
                     >
                         <p className="text-accent text-sm font-black">
                             о сайте

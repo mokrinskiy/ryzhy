@@ -27,7 +27,7 @@ const images = [
 const page = () => {
     return (
         <div className="space-y-[200px]">
-            <div className="w-full px-[30px] py-[120px] max-lg:py-[100px] bg-center bg-[url(/images/gallery/bg_1.jpg)] bg-cover">
+            <div className="w-full px-[30px] max-md:px-[15px] py-[120px] max-lg:py-[100px] bg-center bg-[url(/images/gallery/bg_1.jpg)] bg-cover">
                 <div className="w-full h-full flex justify-between gap-[150px] max-lg:gap-[50px] max-md:gap-[20px] max-md:flex-col">
                     <div className="w-[50%] max-md:w-full max-md:items-center flex justify-end items-center max-md:justify-center">
                         <GalleryItem
@@ -45,7 +45,7 @@ const page = () => {
                     </div>
                 </div>
             </div>
-            <div className="w-full px-[30px] py-[120px] max-lg:py-[100px]">
+            <div className="w-full px-[30px] max-md:px-[15px] py-[120px] max-lg:py-[100px]">
                 <div className="w-full h-full flex justify-between gap-[150px] max-lg:gap-[50px] max-md:gap-[20px] max-md:flex-col">
                     <div className="w-[50%] max-md:w-full max-md:items-center flex justify-end items-center max-md:justify-center">
                         <GalleryItem
@@ -63,7 +63,7 @@ const page = () => {
                     </div>
                 </div>
             </div>
-            <div className="w-full h-full flex justify-center">
+            <div className="w-full px-[30px] max-md:px-[15px] h-full flex justify-center">
                 <div className="max-w-[1150px] w-full h-[700px] relative max-md:h-[300px]">
                     <Image
                         src={images[4].src}
@@ -74,7 +74,7 @@ const page = () => {
                     />
                 </div>
             </div>
-            <div className="w-full px-[30px] py-[120px] max-lg:py-[100px]">
+            <div className="w-full px-[30px] max-md:px-[15px] py-[120px] max-lg:py-[100px]">
                 <div className="w-full h-full flex justify-between gap-[150px] max-lg:gap-[50px] max-md:gap-[20px] max-md:flex-col">
                     <div className="w-[50%] max-md:w-full max-md:items-center flex justify-end items-center max-md:justify-center">
                         <GalleryItem
@@ -92,7 +92,7 @@ const page = () => {
                     </div>
                 </div>
             </div>
-            <div className="w-full px-[30px] py-[120px] max-lg:py-[100px] bg-center bg-[url(/images/gallery/bg_2.jpg)] bg-cover">
+            <div className="w-full px-[30px] max-md:px-[15px] py-[120px] max-lg:py-[100px] bg-center bg-[url(/images/gallery/bg_2.jpg)] bg-cover">
                 <div className="w-full h-full flex justify-between gap-[150px] max-lg:gap-[50px] max-md:gap-[20px] max-md:flex-col">
                     <div className="w-[50%] max-md:w-full max-md:items-center flex justify-end items-center max-md:justify-center">
                         <GalleryItem
@@ -110,7 +110,7 @@ const page = () => {
                     </div>
                 </div>
             </div>
-            <div className="w-full h-full flex justify-center">
+            <div className="w-full h-full px-[30px] max-md:px-[15px]flex justify-center">
                 <div className="max-w-[1150px] w-full h-[700px] relative max-md:h-[300px]">
                     <Image
                         src={images[9].src}
@@ -121,7 +121,7 @@ const page = () => {
                     />
                 </div>
             </div>
-            <div className="w-full px-[30px] py-[120px] max-lg:py-[100px]">
+            <div className="w-full px-[30px] max-md:px-[15px] py-[120px] max-lg:py-[100px]">
                 <div className="w-full h-full flex justify-between gap-[150px] max-lg:gap-[50px] max-md:gap-[20px] max-md:flex-col">
                     <div className="w-[50%] max-md:w-full max-md:items-center flex justify-end items-center max-md:justify-center">
                         <GalleryItem
@@ -139,7 +139,7 @@ const page = () => {
                     </div>
                 </div>
             </div>
-            <div className="w-full px-[30px] py-[120px] max-lg:py-[100px]  bg-center bg-[url(/images/gallery/bg_3.jpg)] bg-cover">
+            <div className="w-full px-[30px] max-md:px-[15px] py-[120px] max-lg:py-[100px]  bg-center bg-[url(/images/gallery/bg_3.jpg)] bg-cover">
                 <div className="w-full h-full flex justify-between gap-[150px] max-lg:gap-[50px] max-md:gap-[20px] max-md:flex-col">
                     <div className="w-[50%] max-md:w-full max-md:items-center flex justify-end items-center max-md:justify-center">
                         <GalleryItem
@@ -157,7 +157,7 @@ const page = () => {
                     </div>
                 </div>
             </div>
-            <div className="w-full px-[30px] py-[120px] max-lg:py-[100px]">
+            <div className="w-full px-[30px] max-md:px-[15px] py-[120px] max-lg:py-[100px]">
                 <div className="w-full h-full flex justify-between gap-[150px] max-lg:gap-[50px] max-md:gap-[20px] max-md:flex-col">
                     <div className="w-[50%] max-md:w-full max-md:items-center flex justify-end items-center max-md:justify-center">
                         <GalleryItem
@@ -175,7 +175,7 @@ const page = () => {
                     </div>
                 </div>
             </div>
-            <div className="w-full h-full flex justify-center">
+            <div className="w-full h-full px-[30px] max-md:px-[15px] flex justify-center">
                 <div className="max-w-[1150px] w-full h-[700px] relative max-md:h-[300px]">
                     <Image
                         src={images[16].src}
@@ -186,7 +186,7 @@ const page = () => {
                     />
                 </div>
             </div>
-            <div className="w-full px-[30px] py-[120px] max-lg:py-[100px] bg-center bg-[url(/images/gallery/bg_4.jpg)] bg-cover">
+            <div className="w-full px-[30px] max-md:px-[15px] py-[120px] max-lg:py-[100px] bg-center bg-[url(/images/gallery/bg_4.jpg)] bg-cover">
                 <div className="w-full h-full flex justify-between gap-[150px] max-lg:gap-[50px] max-md:gap-[20px] max-md:flex-col">
                     <div className="w-[50%] max-md:w-full max-md:items-center flex justify-end items-center max-md:justify-center">
                         <GalleryItem
