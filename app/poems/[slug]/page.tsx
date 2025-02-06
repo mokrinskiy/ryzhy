@@ -1,36 +1,24 @@
 import { poems } from "@/content/poems";
 
 interface PageProps {
-    params: { slug: string };
+    params: { slug: string }; // Убедитесь, что slug это строка
 }
 
-// Генерируем статические пути, чтобы Next.js понимал, какие страницы создавать заранее
-export function generateStaticParams() {
-    return poems.map((_, index) => ({
-        slug: (index + 1).toString(),
-    }));
-}
+const Page: React.FC<PageProps> = ({ params: { slug } }) => {
+    // Преобразуем slug в число, если poems индексируется числами
+    const item = poems[parseInt(slug, 10) - 1];
 
-const Page = ({ params }: PageProps) => {
-    // Преобразуем slug в число
-    const slug = Number(params.slug);
-
-    // Проверяем, существует ли стихотворение
-    if (isNaN(slug) || slug < 1 || slug > poems.length) {
-        return (
-            <p className="text-center text-red-500">Стихотворение не найдено</p>
-        );
+    if (!item) {
+        return <div>Стихотворение не найдено</div>;
     }
 
-    const item = poems[slug - 1];
-
     return (
-        <div className="w-full h-auto py-[50px] flex justify-center items-center max-md:px-[10px] overflow-hidden">
-            <div className="flex flex-col items-center px-[10px]">
+        <div className="w-full h-auto py-[50px] justify-center items-center max-md:px-[10px] flex overflow-hidden">
+            <div className="items-center flex justify-center flex-col px-[10px]">
                 <h1 className="text-xl">{item.title}</h1>
                 <div>
                     <p
-                        className="mt-[20px] text-base whitespace-pre-line"
+                        className="mt-[20px] text-base"
                         dangerouslySetInnerHTML={{
                             __html: item.text.replace(/\n/g, "<br />"),
                         }}
