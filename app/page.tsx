@@ -95,9 +95,9 @@ export default function Home() {
                 <div className="flex items-center min-w-[100px] w-auto h-auto">
                     <Button
                         variant="ghost"
-                        className="text-xl hover:text-transparent"
+                        className="text-xl text-accent hover:text-white"
                     >
-                        <p className="text-accent text-sm font-black">
+                        <p className=" text-sm font-black">
                             о сайте
                         </p>
                     </Button>
