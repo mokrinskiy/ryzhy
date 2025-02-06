@@ -1,10 +1,13 @@
+"use client";
 import { poems } from "@/content/poems";
 
 interface PageProps {
     params: { slug: string }; // Убедитесь, что slug это строка
 }
 
-const Page: React.FC<PageProps> = ({ params: { slug } }) => {
+const Page: React.FC<PageProps> = async ({ params }) => {
+    const { slug } = params;
+
     // Преобразуем slug в число, если poems индексируется числами
     const item = poems[parseInt(slug, 10) - 1];
 
