@@ -1,6 +1,10 @@
 import { poems } from "@/content/poems";
 
-const page = ({ params: { slug } }) => {
+interface PageProps {
+    params: { slug: any };
+}
+
+const page: React.FC<PageProps> = ({ params: { slug } }) => {
     const item = poems[slug - 1];
     return (
         <div className="w-full h-auto py-[50px] justify-center items-center max-md:px-[10px] flex overflow-hidden">

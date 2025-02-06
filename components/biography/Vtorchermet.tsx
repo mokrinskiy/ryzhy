@@ -95,7 +95,7 @@ const Vtorchermet = () => {
                                 fill={true}
                             />
                         </div>
-                        <p className="max-w-[500px] w-full">Борис в детстве</p>
+                        <p>Борис с отцом на демонстрации</p>
                     </motion.div>
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
@@ -113,7 +113,7 @@ const Vtorchermet = () => {
                                 fill={true}
                             />
                         </div>
-                        <p>Борис с отцом на демонстрации</p>
+                        <p className="max-w-[500px] w-full">Борис в детстве</p>
                     </motion.div>
                 </div>
                 {/* 3 */}
