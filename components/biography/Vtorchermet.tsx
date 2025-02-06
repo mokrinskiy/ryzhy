@@ -1,22 +1,38 @@
+import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
 
 const Vtorchermet = () => {
     return (
-        <div id="2" className="w-full pt-[10px] max-md:p-[10px] flex flex-col overflow-hidden gap-y-[150px] max-lg:gap-y-[50px]">
+        <div
+            id="2"
+            className="w-full pt-[10px] max-md:p-[10px] flex flex-col overflow-hidden gap-y-[150px] max-lg:gap-y-[50px]"
+        >
             {/* 1 */}
             <div className="bg-[url(/images/bio/vtorchermet_bg.png)] bg-center bg-cover gap-y-[150px] max-lg:gap-y-[50px] flex flex-col px-[30px] max-md:px-[10px] pt-[250px] max-lg:pt-[100px]">
                 <div className="w-full h-full flex justify-between gap-[150px] max-lg:gap-[50px] max-md:flex-col max-md:items-end max-md:gap-[20px]">
                     <div className="w-[50%] max-md:w-[85%] flex justify-end items-start max-md:justify-start">
-                        <div className="flex gap-2 items-end">
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 1 }}
+                            viewport={{ once: true }}
+                            className="flex gap-2 items-end"
+                        >
                             <p className="text-accent font-black">часть 2.</p>
                             <p className="text-5xl max-lg:text-3xl">
                                 вторчермет
                             </p>
-                        </div>
+                        </motion.div>
                     </div>
                     <div className="w-[50%] max-md:w-[85%] min-h-full flex gap-y-[50px] max-lg:gap-y-[20px] flex-col text-lg max-lg:text-base">
-                        <div className="max-w-[500px] w-full h-[600px] max-lg:h-[400px] relative">
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 1 }}
+                            viewport={{ once: true }}
+                            className="max-w-[500px] w-full h-[600px] max-lg:h-[400px] relative"
+                        >
                             <Image
                                 src={"/images/bio/bio4.jpg"}
                                 alt="bio1"
@@ -24,8 +40,14 @@ const Vtorchermet = () => {
                                 className="object-cover"
                                 fill={true}
                             />
-                        </div>
-                        <div className="max-w-[500px] w-full space-y-[20px] text-base max-lg:text-sm">
+                        </motion.div>
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 1 }}
+                            viewport={{ once: true }}
+                            className="max-w-[500px] w-full space-y-[20px] text-base max-lg:text-sm"
+                        >
                             <p>
                                 Удар, удар, снова удар. На боксерском ринге
                                 тренируются двое подтянутых 46-летних мужчин.
@@ -52,12 +74,18 @@ const Vtorchermet = () => {
                                 Борис даже одержал победу на городских юношеских
                                 соревнованиях, но потом решил уйти из секции.
                             </p>
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
                 {/* 2 */}
                 <div className="w-full h-full flex justify-between gap-[150px] max-lg:gap-[50px] max-md:flex-col">
-                    <div className="w-[50%] max-md:w-full flex items-end gap-y-[5px] flex-col font-black text-sm">
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1 }}
+                        viewport={{ once: true }}
+                        className="w-[50%] max-md:w-full flex items-end gap-y-[5px] flex-col font-black text-sm"
+                    >
                         <div className="max-w-[500px] w-full h-[600px] max-lg:h-[400px] relative max-md:h-[600px]">
                             <Image
                                 src={"/images/bio/bio5.jpg"}
@@ -68,8 +96,14 @@ const Vtorchermet = () => {
                             />
                         </div>
                         <p className="max-w-[500px] w-full">Борис в детстве</p>
-                    </div>
-                    <div className="w-[50%] max-md:w-full min-h-full flex gap-y-[5px] flex-col text-sm font-black">
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1 }}
+                        viewport={{ once: true }}
+                        className="w-[50%] max-md:w-full min-h-full flex gap-y-[5px] flex-col text-sm font-black"
+                    >
                         <div className="max-w-[500px] w-full h-[600px] max-lg:h-[400px] relative max-md:h-[600px]">
                             <Image
                                 src={"/images/bio/bio6.jpg"}
@@ -80,12 +114,18 @@ const Vtorchermet = () => {
                             />
                         </div>
                         <p>Борис с отцом на демонстрации</p>
-                    </div>
+                    </motion.div>
                 </div>
                 {/* 3 */}
                 <div className="w-full max-md:w-[85%] max-md:text-sm h-full flex justify-between gap-[150px] max-md:gap-0 max-md:flex-col">
                     <div className="w-[50%] max-md:w-full flex justify-end items-end space-y-[50px] max-lg:space-y-[20px] flex-col">
-                        <div className="max-w-[500px] w-full space-y-[20px] max-lg:space-y-[10px]">
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 1 }}
+                            viewport={{ once: true }}
+                            className="max-w-[500px] w-full space-y-[20px] max-lg:space-y-[10px]"
+                        >
                             <p>
                                 В Свердловске Борис Петрович стал главным
                                 геофизиком Уральского геологического управления,
@@ -112,7 +152,7 @@ const Vtorchermet = () => {
                                 людей — в основном от наркотиков. Те, кого я
                                 любил и кого я уважал».
                             </p>
-                        </div>
+                        </motion.div>
                     </div>
                     <div className="w-[50%] max-md:w-0 max-md:h-0 min-h-full flex gap-y-[50px] flex-col text-lg"></div>
                 </div>
@@ -122,13 +162,26 @@ const Vtorchermet = () => {
                 <div className="w-[50%] min-h-full flex gap-y-[50px] flex-col text-lg max-md:w-0"></div>
                 <div className="w-[50%] max-md:w-[85%] flex items-start space-y-[50px] max-lg:space-y-[20px] flex-col">
                     <div className="max-w-[500px] w-full space-y-[50px] max-lg:space-y-[20px]">
-                        <video controls className="w-full">
-                            <source
-                                src="/video/vtorchermet.mp4"
-                                type="video/mp4"
-                            />
-                        </video>
-                        <p className="font-black max-md:text-sm">
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 1 }}
+                            viewport={{ once: true }}
+                        >
+                            <video controls className="w-full">
+                                <source
+                                    src="/video/vtorchermet.mp4"
+                                    type="video/mp4"
+                                />
+                            </video>
+                        </motion.div>
+                        <motion.p
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 1 }}
+                            viewport={{ once: true }}
+                            className="font-black max-md:text-sm"
+                        >
                             «Я десять лет живу в доме, где 90 процентов жильцов
                             — бывшие заключенные, — говорил Рыжий уже в другом
                             интервью. — Я очень люблю этих людей. У нас в доме
@@ -146,11 +199,17 @@ const Vtorchermet = () => {
                             были для Бориса своеобразным переходом из точки А —
                             домашнего уюта, безусловной любви — в точку Б — к
                             улице, сверстникам, которые жили совсем иначе.
-                        </p>
+                        </motion.p>
                     </div>
                 </div>
             </div>
-            <div className="w-full h-full flex justify-center">
+            <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1 }}
+                viewport={{ once: true }}
+                className="w-full h-full flex justify-center"
+            >
                 <div className="max-w-[1150px] w-full h-[700px] max-lg:h-[400px] relative max-md:h-[300px]">
                     <Image
                         src={"/images/bio/mask.png"}
@@ -160,11 +219,17 @@ const Vtorchermet = () => {
                         fill={true}
                     />
                 </div>
-            </div>
+            </motion.div>
             {/* 5 */}
             <div className="w-full h-full flex justify-between gap-[150px] max-lg:gap-[50px] max-md:flex-col px-[30px] max-md:px-[10px] max-md:gap-[10px]">
                 <div className="w-[50%] max-md:w-[85%] max-md:text-sm flex justify-end items-end space-y-[50px] max-lg:space-y-[20px] flex-col">
-                    <div className="max-w-[500px] w-full space-y-[20px] max-lg:space-y-[10px]">
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1 }}
+                        viewport={{ once: true }}
+                        className="max-w-[500px] w-full space-y-[20px] max-lg:space-y-[10px]"
+                    >
                         <p>
                             «Я знала мальчишек [с которыми гулял Боря]: они
                             часто приходили к нам домой, — говорит Ольга. —
@@ -200,10 +265,16 @@ const Vtorchermet = () => {
                             школьных годах: «Били [меня] много. А как-то у нас
                             всех били, и все били кого-то. Меня били, я бил».
                         </p>
-                    </div>
+                    </motion.div>
                 </div>
                 <div className="w-[50%] max-md:w-[85%] max-md:text-sm flex justify-end space-y-[50px] max-lg:space-y-[20px] flex-col">
-                    <div className="max-w-[500px] w-full space-y-[20px] max-lg:space-y-[10px]">
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1 }}
+                        viewport={{ once: true }}
+                        className="max-w-[500px] w-full space-y-[20px] max-lg:space-y-[10px]"
+                    >
                         <p>
                             В{" "}
                             <b className="font-black text-accent">
@@ -217,7 +288,7 @@ const Vtorchermet = () => {
                             парень из интеллигентной семьи на Вторчермете не
                             боялся никого.
                         </p>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </div>

@@ -1,17 +1,33 @@
+import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
 
 const Archive = () => {
     return (
-        <div id="6" className="w-full px-[30px] max-md:p-[10px] py-[250px] max-lg:py-[100px] flex flex-col overflow-hidden gap-y-[150px] max-md:gap-y-0 max-lg:gap-y-[50px] bg-center bg-[url(/images/bio/archieve_bg.png)] bg-cover">
+        <div
+            id="6"
+            className="w-full px-[30px] max-md:p-[10px] py-[250px] max-lg:py-[100px] flex flex-col overflow-hidden gap-y-[150px] max-md:gap-y-0 max-lg:gap-y-[50px] bg-center bg-[url(/images/bio/archieve_bg.png)] bg-cover"
+        >
             {/*1*/}
             <div className="w-full max-md:items-start h-full flex justify-between gap-[150px] max-lg:gap-[50px] max-md:flex-col">
                 <div className="w-[50%] max-md:w-[85%] flex max-md:items-start items-end flex-col space-y-[50px] max-lg:space-y-[20px]">
-                    <div className="flex gap-2 items-end">
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1 }}
+                        viewport={{ once: true }}
+                        className="flex gap-2 items-end"
+                    >
                         <p className="text-accent font-black">часть 6.</p>
                         <p className="text-5xl max-lg:text-3xl">архив</p>
-                    </div>
-                    <div className="max-w-[500px] w-full space-y-[20px] max-lg:space-y-[10px] max-md:text-sm">
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1 }}
+                        viewport={{ once: true }}
+                        className="max-w-[500px] w-full space-y-[20px] max-lg:space-y-[10px] max-md:text-sm"
+                    >
                         <p>
                             7 мая 2001 года в квартире своих родителей в
                             Екатеринбурге Борис покончил жизнь самоубийством. Он
@@ -38,13 +54,19 @@ const Archive = () => {
                             разговора замирал и начинал загибать пальцы — считал
                             количество слогов.
                         </p>
-                    </div>
+                    </motion.div>
                 </div>
                 <div className="w-[50%] min-h-full flex gap-y-[50px] flex-col text-lg max-md:w-0"></div>
             </div>
             {/* 2 */}
             <div className="w-full h-full flex justify-center">
-                <div className="max-w-[1150px] w-full h-[700px] max-lg:h-[400px] relative max-md:h-[300px]">
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1 }}
+                    viewport={{ once: true }}
+                    className="max-w-[1150px] w-full h-[700px] max-lg:h-[400px] relative max-md:h-[300px]"
+                >
                     <Image
                         src={"/images/bio/bio15.png"}
                         alt="bio1"
@@ -52,14 +74,20 @@ const Archive = () => {
                         className="object-cover aspect-video"
                         fill={true}
                     />
-                </div>
+                </motion.div>
             </div>
             {/* 3 */}
             <div className="w-full h-full flex justify-between gap-[150px] max-lg:gap-[50px] max-md:flex-col max-md:items-end">
                 <div className="w-[50%] min-h-full flex gap-y-[50px] flex-col text-lg max-md:w-0"></div>
                 <div className="w-[50%] flex-col space-y-[50px] max-lg:space-y-[20px] max-md:w-[85%]">
                     <div className="max-w-[500px] w-full space-y-[50px] max-lg:space-y-[20px] max-md:text-sm">
-                        <div className="space-y-[20px] max-lg:space-y-[10px]">
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 1 }}
+                            viewport={{ once: true }}
+                            className="space-y-[20px] max-lg:space-y-[10px]"
+                        >
                             <p className="font-black">
                                 Вадим Курочкин, близкий университетский друг
                                 Бориса, стоит на метеогорке и смотрит на
@@ -80,8 +108,14 @@ const Archive = () => {
                                 Елизавете, каждый день добирался до центра
                                 города полтора часа.
                             </p>
-                        </div>
-                        <div className="max-w-[500px] w-full h-[600px] max-lg:h-[400px] relative">
+                        </motion.div>
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 1 }}
+                            viewport={{ once: true }}
+                            className="max-w-[500px] w-full h-[600px] max-lg:h-[400px] relative"
+                        >
                             <Image
                                 src={"/images/bio/bio16.png"}
                                 alt="bio1"
@@ -89,8 +123,14 @@ const Archive = () => {
                                 className="object-cover aspect-video"
                                 fill={true}
                             />
-                        </div>
-                        <div className="space-y-[20px] max-lg:space-y-[10px]">
+                        </motion.div>
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 1 }}
+                            viewport={{ once: true }}
+                            className="space-y-[20px] max-lg:space-y-[10px]"
+                        >
                             <p>
                                 Вадим дружил с Борисом не «по части поэзии». Он
                                 ни разу не читал «Роттердамский дневник» Рыжего,
@@ -119,7 +159,7 @@ const Archive = () => {
                                 И он чуть ли не впервые за весь наш разговор
                                 улыбается.
                             </p>
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
             </div>

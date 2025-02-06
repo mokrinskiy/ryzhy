@@ -1,17 +1,33 @@
+import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
 
 const Family = () => {
     return (
-        <div id="3" className="w-full px-[30px] max-lg:gap-[50px] max-md:p-[10px] flex flex-col overflow-hidden gap-y-[150px] bg-center bg-[url(/images/bio/family_bg.png)] py-[250px] max-lg:py-[100px] bg-cover">
+        <div
+            id="3"
+            className="w-full px-[30px] max-lg:gap-[50px] max-md:p-[10px] flex flex-col overflow-hidden gap-y-[150px] bg-center bg-[url(/images/bio/family_bg.png)] py-[250px] max-lg:py-[100px] bg-cover"
+        >
             {/* 1 */}
             <div className="w-full h-full flex justify-between gap-[150px] max-lg:gap-[50px] max-md:flex-col max-md:items-end max-md:gap-[20px]">
                 <div className="w-[50%] max-md:w-[85%] flex justify-end max-md:justify-center max-md:flex-col max-md:gap-[20px]">
-                    <div className="flex gap-2 items-end md:collapse">
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1 }}
+                        viewport={{ once: true }}
+                        className="flex gap-2 items-end md:collapse"
+                    >
                         <p className="text-accent font-black">часть 3.</p>
                         <p className="text-5xl max-lg:text-3xl">семья</p>
-                    </div>
-                    <div className="max-w-[500px] w-full h-[400px] max-lg:h-[300px] relative">
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1 }}
+                        viewport={{ once: true }}
+                        className="max-w-[500px] w-full h-[400px] max-lg:h-[300px] relative"
+                    >
                         <Image
                             src={"/images/bio/bio7.png"}
                             alt="bio1"
@@ -19,14 +35,26 @@ const Family = () => {
                             className="object-cover aspect-video"
                             fill={true}
                         />
-                    </div>
+                    </motion.div>
                 </div>
                 <div className="w-[50%]  max-md:w-[85%] max-md:text-sm min-h-full flex gap-y-[50px] max-lg:gap-y-[0px] flex-col text-lg max-lg:text-base">
-                    <div className="flex gap-2 items-end max-md:collapse">
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1 }}
+                        viewport={{ once: true }}
+                        className="flex gap-2 items-end max-md:collapse"
+                    >
                         <p className="text-accent font-black">часть 3.</p>
                         <p className="text-5xl max-lg:text-3xl">семья</p>
-                    </div>
-                    <div className="max-w-[500px] w-full space-y-[20px] max-lg:space-y-[10px]">
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1 }}
+                        viewport={{ once: true }}
+                        className="max-w-[500px] w-full space-y-[20px] max-lg:space-y-[10px]"
+                    >
                         <p>
                             «Первая любовь у меня закончилась удачно. Это была
                             школьница Ирина, которая стала впоследствии моей
@@ -64,11 +92,17 @@ const Family = () => {
                             Восстанавливался он очень долго, даже на свадебных
                             фотографиях заметны следы побоев.
                         </p>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
             {/* 2 */}
-            <div className="w-full h-full flex justify-center">
+            <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1 }}
+                viewport={{ once: true }}
+                className="w-full h-full flex justify-center"
+            >
                 <div className="max-w-[1150px] w-full h-[700px] max-lg:h-[400px] relative max-md:h-[300px]">
                     <Image
                         src={"/images/bio/bio8.png"}
@@ -78,11 +112,17 @@ const Family = () => {
                         fill={true}
                     />
                 </div>
-            </div>
+            </motion.div>
             {/* 3 */}
             <div className="w-full h-full flex justify-between gap-[150px] max-lg:gap-[50px] max-md:flex-col">
                 <div className="w-[50%] max-md:text-sm max-md:w-[85%] flex justify-end items-end space-y-[50px] max-lg:space-y-[20px] flex-col">
-                    <div className="max-w-[500px] w-full space-y-[20px] max-lg:space-y-[10px]">
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1 }}
+                        viewport={{ once: true }}
+                        className="max-w-[500px] w-full space-y-[20px] max-lg:space-y-[10px]"
+                    >
                         <p>
                             И Ирина, и Борис отучились в Горном, поступили в
                             аспирантуру. Рыжий пошел учиться в Горный под
@@ -125,10 +165,16 @@ const Family = () => {
                             <b className="font-black text-accent"> депрессии</b>
                             .
                         </p>
-                    </div>
+                    </motion.div>
                 </div>
                 <div className="w-[50%] max-md:w-full flex justify-end max-md:justify-center space-y-[50px] max-lg:space-y-[20px] flex-col">
-                    <div className="max-w-[500px] w-full h-[400px] max-lg:h-[300px] relative">
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1 }}
+                        viewport={{ once: true }}
+                        className="max-w-[500px] w-full h-[400px] max-lg:h-[300px] relative"
+                    >
                         <Image
                             src={"/images/bio/bio9.png"}
                             alt="bio1"
@@ -136,7 +182,7 @@ const Family = () => {
                             className="object-cover aspect-video"
                             fill={true}
                         />
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </div>

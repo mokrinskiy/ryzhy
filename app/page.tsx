@@ -40,7 +40,7 @@ export default function Home() {
                 </div>
             </div>
             <div className="w-full justify-between max-md:px-[5px] flex items-center max-lg:items-start md:px-[5%] py-[10px] max-lg:flex-col max-md:mt-[100px]">
-                <img src="images/main_text.svg" alt="" />
+                <img className="md:hidden" src="images/main_text.svg" alt="" />
                 <div className="md:hidden w-full flex  flex-col mt-[20px]">
                     <p className="font-black text-accent max-md:text-sm">
                         [ русский поэт ]

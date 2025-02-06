@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
 
@@ -11,18 +12,30 @@ const Exile = () => {
             <div className="gap-y-[50px] max-md:w-full max-md:flex max-md:items-end max-md:flex-col max-md:gap-y-[20px]">
                 <div className="w-full md:pb-[50px] max-md:w-[85%] max-md:justify-start h-full flex md:justify-between gap-[150px] max-lg:gap-[50px] max-md:items-start max-md:gap-[20px]">
                     <div className="w-[50%] max-md:w-[85%] flex max-md:justify-start justify-end items-end">
-                        <div className="flex items-end gap-2">
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 1 }}
+                            viewport={{ once: true }}
+                            className="flex items-end gap-2"
+                        >
                             <p className="text-accent font-black">часть 4.</p>
                             <p className="text-5xl max-lg:text-3xl">
                                 изгнанник
                             </p>
-                        </div>
+                        </motion.div>
                     </div>
                     <div className="w-[50%] min-h-full flex gap-y-[50px] flex-col text-lg max-md:w-0 max-md:hidden"></div>
                 </div>
                 <div className="w-full max-md:items-end h-full flex justify-between gap-[150px] max-lg:gap-[50px] max-md:gap-[20px] max-md:flex-col-reverse">
                     <div className="w-[50%] max-md:w-[85%] flex justify-end items-end">
-                        <div className="max-w-[500px] w-full h-[400px] relative">
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 1 }}
+                            viewport={{ once: true }}
+                            className="max-w-[500px] w-full h-[400px] relative"
+                        >
                             <Image
                                 src={"/images/bio/bio10.png"}
                                 alt="bio1"
@@ -30,10 +43,16 @@ const Exile = () => {
                                 className="object-cover aspect-video"
                                 fill={true}
                             />
-                        </div>
+                        </motion.div>
                     </div>
                     <div className="w-[50%] max-md:w-[85%] min-h-full flex gap-y-[50px] flex-col text-lg max-md:text-sm max-md:gap-[20px]">
-                        <div className="max-w-[500px] w-full space-y-[20px]">
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 1 }}
+                            viewport={{ once: true }}
+                            className="max-w-[500px] w-full space-y-[20px]"
+                        >
                             <p>
                                 «Рыжий был моим единственным собеседником в
                                 Екатеринбурге, который мог наизусть прочесть,
@@ -42,7 +61,8 @@ const Exile = () => {
                                 русской поэзии меньше, чем Борис.
                                 <b className="font-black text-accent">
                                     {" "}
-                                    Хулиганом
+                                    Хулиганом 
+                                    {" "}
                                 </b>
                                 с задней парты он точно не был. Конечно, он мог
                                 кому-то двинуть, ответить на хамство, но это не
@@ -50,14 +70,20 @@ const Exile = () => {
                                 Когда он общался с литераторами, интеллигенцией,
                                 то надевал маску такого парня».
                             </p>
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
             </div>
             {/* 3 */}
             <div className="w-full h-full flex justify-between gap-[150px] max-lg:gap-[50px]">
                 <div className="w-[50%] max-md:w-[85%] flex justify-end items-end space-y-[50px] flex-col">
-                    <div className="max-w-[500px] w-full space-y-[20px] max-md:text-sm">
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1 }}
+                        viewport={{ once: true }}
+                        className="max-w-[500px] w-full space-y-[20px] max-md:text-sm"
+                    >
                         <p>
                             По мнению Дозморова, своим среди интеллигенции Борис
                             не был — не хватало «лоска»: «Но и в среде “оторви и
@@ -76,13 +102,19 @@ const Exile = () => {
                             переступить. Он не мог криминалом заниматься,
                             поэтому такой внутренний конфликт».
                         </p>
-                    </div>
+                    </motion.div>
                 </div>
                 <div className="w-[50%] max-md:w-0 min-h-full flex gap-y-[50px] flex-col text-lg"></div>
             </div>
             {/* 4 */}
             <div className="w-full h-full flex justify-center">
-                <div className="max-w-[1150px] w-full h-[700px] relative max-md:h-[300px]">
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1 }}
+                    viewport={{ once: true }}
+                    className="max-w-[1150px] w-full h-[700px] relative max-md:h-[300px]"
+                >
                     <Image
                         src={"/images/bio/bio11.png"}
                         alt="bio1"
@@ -90,13 +122,19 @@ const Exile = () => {
                         className="object-cover aspect-video"
                         fill={true}
                     />
-                </div>
+                </motion.div>
             </div>
             {/* 5 */}
             <div className="w-full h-full flex justify-between gap-[150px] max-lg:gap-[50px]">
                 <div className="w-[50%] min-h-full flex gap-y-[50px] flex-col text-lg max-md:w-0"></div>
                 <div className="w-[50%] flex space-y-[50px] flex-col max-md:w-[85%] max-md:text-sm">
-                    <div className="max-w-[500px] w-full space-y-[20px]">
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1 }}
+                        viewport={{ once: true }}
+                        className="max-w-[500px] w-full space-y-[20px]"
+                    >
                         <p>
                             «Мы часто делились воспоминаниями из детства,
                             говорили о людях, рядом с которыми жили, о смертях,
@@ -119,7 +157,7 @@ const Exile = () => {
                             постоянный источник боли, возможно, многолетняя
                             депрессия, но она была частью его личности».
                         </p>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </div>

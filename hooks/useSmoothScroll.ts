@@ -3,7 +3,7 @@ import { useEffect } from "react";
 
 export default function useSmoothScroll() {
     useEffect(() => {
-        const lenis = new Lenis({ duration: 2 });
+        const lenis = new Lenis({ duration: 1 });
 
         function raf(time: any) {
             lenis.raf(time);

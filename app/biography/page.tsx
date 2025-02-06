@@ -9,40 +9,57 @@ import Poems from "@/components/biography/Poems";
 import Vtorchermet from "@/components/biography/Vtorchermet";
 import useSmoothScroll from "@/hooks/useSmoothScroll";
 import React from "react";
+import { motion, useScroll } from "motion/react";
 
 const page = () => {
+    const { scrollYProgress } = useScroll();
     useSmoothScroll();
-    return (
-        <div className="space-y-[200px]">
-            <Main />
-            <img
-                src="/images/bio/childhood.svg"
-                className="w-full px-[30px] max-md:hidden"
-            />
-            <img
-                src="/images/bio/childhood_m.svg"
-                className="w-full px-[30px] md:hidden"
-            />
 
-            <Childhood />
-            <img
-                src="/images/bio/vtorchermet.svg"
-                className="w-full px-[30px] max-md:hidden"
+    return (
+        <>
+            <motion.div
+                id="scroll-indicator"
+                className="fixed bottom-0 left-0 right-0 h-[3px] z-50 origin-left bg-accent"
+                style={{
+                    scaleX: scrollYProgress,
+                }}
             />
-            <img
-                src="/images/bio/vtorchermet_m.svg"
-                className="w-full px-[30px] md:hidden"
-            />
-            <Vtorchermet />
-            <img src="/images/bio/family.svg" className="w-full px-[30px]" />
-            <Family />
-            <img src="/images/bio/exile.svg" className="w-full px-[30px]" />
-            <Exile />
-            <img src="/images/bio/poems.svg" className="w-full px-[30px]" />
-            <Poems />
-            <img src="/images/bio/archieve.svg" className="w-full px-[30px]" />
-            <Archive />
-        </div>
+            <div className="space-y-[200px]">
+                <Main />
+                <img
+                    src="/images/bio/childhood.svg"
+                    className="w-full px-[30px] max-md:hidden"
+                />
+                <img
+                    src="/images/bio/childhood_m.svg"
+                    className="w-full px-[30px] md:hidden"
+                />
+                <Childhood />
+                <img
+                    src="/images/bio/vtorchermet.svg"
+                    className="w-full px-[30px] max-md:hidden"
+                />
+                <img
+                    src="/images/bio/vtorchermet_m.svg"
+                    className="w-full px-[30px] md:hidden"
+                />
+                <Vtorchermet />
+                <img
+                    src="/images/bio/family.svg"
+                    className="w-full px-[30px]"
+                />
+                <Family />
+                <img src="/images/bio/exile.svg" className="w-full px-[30px]" />
+                <Exile />
+                <img src="/images/bio/poems.svg" className="w-full px-[30px]" />
+                <Poems />
+                <img
+                    src="/images/bio/archieve.svg"
+                    className="w-full px-[30px]"
+                />
+                <Archive />
+            </div>
+        </>
     );
 };
 
