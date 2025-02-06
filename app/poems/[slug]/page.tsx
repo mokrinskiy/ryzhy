@@ -1,27 +1,25 @@
-"use client";
 import { poems } from "@/content/poems";
+import React from "react";
 
-interface PageProps {
-    params: { slug: string }; // Убедитесь, что slug это строка
-}
-
-const Page: React.FC<PageProps> = async ({ params }) => {
-    const { slug } = params;
-
-    // Преобразуем slug в число, если poems индексируется числами
-    const item = poems[parseInt(slug, 10) - 1];
+export default function Page({ params }: { params: { slug: string } }) {
+    const index = Number(params.slug) - 1;
+    const item = poems[index];
 
     if (!item) {
-        return <div>Стихотворение не найдено</div>;
+        return (
+            <div className="text-center text-red-500">
+                Стихотворение не найдено
+            </div>
+        );
     }
 
     return (
-        <div className="w-full h-auto py-[50px] justify-center items-center max-md:px-[10px] flex overflow-hidden">
-            <div className="items-center flex justify-center flex-col px-[10px]">
+        <div className="w-full h-auto py-[50px] flex justify-center items-center max-md:px-[10px] overflow-hidden">
+            <div className="flex flex-col items-center px-[10px]">
                 <h1 className="text-xl">{item.title}</h1>
                 <div>
                     <p
-                        className="mt-[20px] text-base"
+                        className="mt-[20px] text-base whitespace-pre-line"
                         dangerouslySetInnerHTML={{
                             __html: item.text.replace(/\n/g, "<br />"),
                         }}
@@ -35,6 +33,4 @@ const Page: React.FC<PageProps> = async ({ params }) => {
             </div>
         </div>
     );
-};
-
-export default Page;
+}
