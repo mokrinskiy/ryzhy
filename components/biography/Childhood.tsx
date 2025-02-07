@@ -24,6 +24,7 @@ const Childhood = () => {
                             sizes="auto"
                             className="object-cover aspect-video"
                             fill={true}
+                            priority
                         />
                     </div>
                     <p className="max-w-[500px] w-full">
@@ -116,6 +117,7 @@ const Childhood = () => {
                                 alt="bio1"
                                 sizes="auto"
                                 className="object-cover aspect-video"
+                                priority
                                 fill={true}
                             />
                         </div>

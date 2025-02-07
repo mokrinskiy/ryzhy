@@ -97,6 +97,7 @@ const Main = () => {
                             src={"/images/bio/bio1.jpg"}
                             alt="bio1"
                             sizes="auto"
+                            priority
                             className="object-cover aspect-video"
                             fill={true}
                         />
