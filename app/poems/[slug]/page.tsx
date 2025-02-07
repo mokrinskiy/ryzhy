@@ -6,27 +6,53 @@ import { Button } from "@/components/ui/button";
 import { MoveLeft } from "lucide-react";
 import Footer from "@/components/Footer";
 
-export default function Page({ params }: { params: { slug: string } }) {
-    const router = useRouter();
+export default function Page({
+    params,
+}: {
+    params: Promise<{ slug: string }>;
+}) {
     const [poem, setPoem] = useState<any | null>(null);
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        const index = parseInt(params.slug) - 1;
-        if (index >= 0 && index < poems.length) {
-            setPoem(poems[index]);
-        } else {
-            setPoem(null);
-        }
-    }, [params.slug]);
+        const fetchData = async () => {
+            const { slug } = await params; // правильное получение slug
+            const index = parseInt(slug) - 1;
+
+            // Проверяем, существует ли такой индекс в массиве стихов
+            if (index >= 0 && index < poems.length) {
+                setPoem(poems[index]);
+            } else {
+                setPoem(null);
+            }
+
+            setLoading(false);
+        };
+
+        fetchData();
+    }, [params]); // useEffect с зависимостью от params
+
+    const router = useRouter();
 
     function previous() {
         router.back();
     }
 
+    // Пока данные не загружены, показываем сообщение "Загрузка..."
+    if (loading) {
+        return (
+            <div className="w-full h-screen flex justify-center items-center">
+                <p className="text-xl text-gray-500">Загрузка...</p>
+            </div>
+        );
+    }
+
     if (!poem) {
         return (
             <div className="w-full h-screen flex justify-center items-center">
-                <p className="text-lg">Загрузка...</p>
+                <p className="text-xl text-gray-500">
+                    Стихотворение не найдено
+                </p>
             </div>
         );
     }
