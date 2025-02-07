@@ -91,7 +91,9 @@ export default function Home() {
                         variant="ghost"
                         className="text-xl text-accent hover:text-white"
                     >
-                        <p className=" text-sm font-black">о сайте</p>
+                        <Link href={"/about"} className=" text-sm font-black">
+                            о сайте
+                        </Link>
                     </Button>
                 </div>
             </div>

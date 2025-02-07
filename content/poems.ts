@@ -31,6 +31,7 @@ export const poems = [
   сгорают в них.`,
         year: 1996,
         genres: ["О любви", "О жизни"],
+        bg: "/images/poems/bg_1.jpg",
     },
     {
         id: 2,
@@ -60,6 +61,7 @@ export const poems = [
   Лучше страшно, лучше безнадежно,
   лучше рылом в грязь.`,
         genres: ["О жизни"],
+        bg: "/images/poems/bg_2.jpg",
     },
     {
         id: 3,
@@ -95,6 +97,7 @@ export const poems = [
   я не вспоминаю никогда.`,
         year: 1999,
         genres: ["О детстве", "О жизни"],
+        bg: "/images/poems/bg_3.jpg",
     },
     {
         id: 4,
@@ -130,6 +133,7 @@ export const poems = [
   матом силлабически кричат.`,
         year: 1997,
         genres: ["О жизни", "О поэзии", "О молодости"],
+        bg: "/images/poems/bg_4.jpg",
     },
     {
         id: 5,
@@ -154,6 +158,7 @@ export const poems = [
 только пар, только белое в синем,
 голубое и белое в си…`,
         genres: ["О любви"],
+        bg: "/images/poems/bg_5.jpg",
     },
     {
         id: 6,
@@ -189,6 +194,7 @@ export const poems = [
 Земная шваль: бандиты и поэты.`,
         year: 1998,
         genres: ["О жизни"],
+        bg: "/images/poems/bg_6.jpg",
     },
     {
         id: 7,
@@ -209,5 +215,6 @@ export const poems = [
 Ты всхлипываешь, я рифмую «всхлип».`,
         year: 1999,
         genres: ["О музе", "О поэзии"],
+        bg: "/images/poems/bg_7.jpg",
     },
 ];

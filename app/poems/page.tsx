@@ -22,7 +22,10 @@ const page = () => {
                             {poem.text.slice(0, 100)}...
                         </p>
                     </div>
-                    <div className="w-[100px] min-w-[40px] font-light flex justify-center items-center border-[1px] border-accent group-hover:border-white ">
+                    <div
+                        style={{ backgroundImage: `url(${poem.bg})` }}
+                        className={`w-[100px] min-w-[40px] font-light flex justify-center items-center border-[1px] border-accent group-hover:border-white bg-center bg-cover`}
+                    >
                         <p className="text-xl font-thin max-md:text-base">
                             {poem.id}
                         </p>

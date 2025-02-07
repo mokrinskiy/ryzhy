@@ -9,7 +9,7 @@ import {
 const End = () => {
     return (
         <div className="w-full px-[30px] pt-[10px] pb-[150px] max-md:p-[10px] h-auto justify-center items-center flex flex-col overflow-hidden">
-            <Accordion type="multiple" className="max-w-[700px] px-[10px] ">
+            <Accordion type="multiple" className="max-w-[700px] px-[10px] w-full">
                 <AccordionItem value="item-1">
                     <AccordionTrigger className="text-xl">
                         Кино

@@ -14,19 +14,19 @@ import { menu_links } from "@/content/menu_links";
 
 const Header = () => {
     return (
-        <div className="w-full px-[30px] py-[10px] max-md:px-[10px] flex justify-end fixed  items-center">
+        <div className="w-full px-[30px] py-[10px] max-md:px-[10px] flex justify-end fixed  items-center z-10">
             {/* menubar */}
-            <div className="flex gap-5">
+            <div className="flex gap-5 ">
                 <DropdownMenu>
-                    <DropdownMenuTrigger className="z-50">
-                        <Button className="z-50" variant="ghost" size="icon">
-                            <AlignRight className="z-50" />
+                    <DropdownMenuTrigger className="">
+                        <Button className="" variant="ghost" size="icon">
+                            <AlignRight className="" />
                         </Button>
                     </DropdownMenuTrigger>
                     <DropdownMenuContent className="mr-[10px] rounded-none">
-                        <DropdownMenuItem>
-                            <Link href={"/"}>Главная</Link>
-                        </DropdownMenuItem>
+                        <Link className="hover:cursor-pointer" href={"/"}>
+                            <DropdownMenuItem className="hover:cursor-pointer">Главная</DropdownMenuItem>
+                        </Link>
                         <DropdownMenuSeparator />
                         {menu_links.map((item, id) => (
                             <Link
