@@ -26,7 +26,7 @@ const Poems = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1 }}
                         viewport={{ once: true }}
-                        className="max-w-[500px] w-full space-y-[20px] max-md:text-sm"
+                        className="max-w-[500px] w-full space-y-[20px] max-md:text-sm text-base max-lg:text-sm"
                     >
                         <p>
                             «Есть два вида литературы: горизонтальная и
@@ -63,7 +63,7 @@ const Poems = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1 }}
                         viewport={{ once: true }}
-                        className="space-y-[20px] max-w-[500px] w-full max-md:text-sm"
+                        className="space-y-[20px] max-w-[500px] w-full max-md:text-sm text-base max-lg:text-sm"
                     >
                         <p>
                             Он был мастером. «Только кажется, что у него простые
@@ -109,7 +109,7 @@ const Poems = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1 }}
                         viewport={{ once: true }}
-                        className="max-w-[500px] w-full space-y-[20px] max-md:text-sm"
+                        className="max-w-[500px] w-full space-y-[20px] max-md:text-sm text-base max-lg:text-sm"
                     >
                         <p className="max-w-[500px] w-full">
                             Александр Кушнер главным в поэзии Рыжего называет

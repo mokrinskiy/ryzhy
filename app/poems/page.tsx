@@ -1,8 +1,11 @@
+"use client";
 import { poems } from "@/content/poems";
+import useSmoothScroll from "@/hooks/useSmoothScroll";
 import Link from "next/link";
 import React from "react";
 
 const page = () => {
+    useSmoothScroll();
     return (
         <div className="space-y-[70px] px-[30px] max-md:p-[10px] py-[50px] z-1 flex justify-center items-center flex-col w-full">
             {poems.map((poem) => (
@@ -20,7 +23,9 @@ const page = () => {
                         </p>
                     </div>
                     <div className="w-[100px] min-w-[40px] font-light flex justify-center items-center border-[1px] border-accent group-hover:border-white ">
-                        <p className="text-xl font-thin max-md:text-base">{poem.id}</p>
+                        <p className="text-xl font-thin max-md:text-base">
+                            {poem.id}
+                        </p>
                     </div>
                 </Link>
             ))}

@@ -7,13 +7,13 @@ import Link from "next/link";
 
 export default function Home() {
     return (
-        <div className="w-full h-screen max-lg:h-auto py-[10px] flex flex-col md:justify-between overflow-hidden">
+        <div className="w-full h-screen max-lg:h-auto py-[10px] flex flex-col md:justify-between">
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1 }}
                 viewport={{ once: true }}
-                className="text-5xl z-10 max-lg:text-3xl max-md:text-base max-md:hidden px-[30px] max-md:px-[10px]"
+                className="text-5xl max-lg:text-3xl max-md:text-base max-md:hidden px-[30px] max-md:px-[10px]"
             >
                 <p>“В России расстаются навсегда.</p>
                 <div className="w-full flex justify-center">
@@ -34,7 +34,7 @@ export default function Home() {
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 1 }}
                 viewport={{ once: true }}
-                className="relative bottom-20 z-0 left-0 right-0 m-auto my-0 max-md:top-[50px] h-[430px] w-[650px] max-md:h-[400px] max-md:w-full"
+                className="relative bottom-20 -z-10 left-0 right-0 m-auto my-0 max-md:top-[50px] h-[430px] w-[650px] max-md:h-[400px] max-md:w-full"
             >
                 <Image
                     src={"/images/main_image.png"}
@@ -49,7 +49,7 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1 }}
                 viewport={{ once: true }}
-                className="absolute top-[50%] left-[10%] max-md:top-[28%] max-md:hidden px-[30px] max-md:px-[10px]"
+                className="absolute top-[50%] left-[10%] max-md:top-[28%] max-md:hidden px-[30px] max-md:px-[10px] z-50"
             >
                 <p className="font-black text-accent max-md:text-sm">
                     [ русский поэт ]
@@ -59,19 +59,13 @@ export default function Home() {
                     <p>1974 — 2001</p>
                 </div>
             </motion.div>
-            <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1 }}
-                viewport={{ once: true }}
-                className="w-full justify-between flex items-center max-lg:items-start md:px-[5%] py-[10px] max-lg:flex-col max-md:mt-[90px] max-md:px-[5px]"
-            >
+            <div className="w-full justify-between flex items-center max-lg:items-start md:px-[5%] py-[10px] max-lg:flex-col max-md:mt-[90px] max-md:px-[5px]">
                 <img
                     className="md:hidden max-md:px-4"
                     src="images/main_text.svg"
                     alt=""
                 />
-                <div className="md:hidden w-full flex  flex-col mt-[20px] max-md:px-4">
+                <div className="md:hidden w-full flex flex-col mt-[20px] max-md:px-4 z-50">
                     <p className="font-black text-accent max-md:text-sm">
                         [ русский поэт ]
                     </p>
@@ -97,12 +91,10 @@ export default function Home() {
                         variant="ghost"
                         className="text-xl text-accent hover:text-white"
                     >
-                        <p className=" text-sm font-black">
-                            о сайте
-                        </p>
+                        <p className=" text-sm font-black">о сайте</p>
                     </Button>
                 </div>
-            </motion.div>
+            </div>
         </div>
     );
 }

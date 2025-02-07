@@ -4,6 +4,7 @@ import GalleryItem from "@/components/GalleryItem";
 import Image from "next/image";
 import { motion, useScroll } from "framer-motion";
 import useSmoothScroll from "@/hooks/useSmoothScroll";
+import Footer from "@/components/Footer";
 
 const images = [
     { src: "/images/gallery/g_1.jpg", alt: "Image 1", type: "portrait" },
@@ -77,7 +78,13 @@ const page = () => {
                     </div>
                 </div>
                 <div className="w-full px-[30px] max-md:px-[15px] h-full flex justify-center">
-                    <div className="max-w-[1150px] w-full h-[700px] relative max-md:h-[300px]">
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1 }}
+                        viewport={{ once: true }}
+                        className="max-w-[1150px] w-full h-[700px] relative max-md:h-[300px]"
+                    >
                         <Image
                             src={images[4].src}
                             alt={images[4].src}
@@ -85,7 +92,7 @@ const page = () => {
                             className="object-cover aspect-video"
                             fill={true}
                         />
-                    </div>
+                    </motion.div>
                 </div>
                 <div className="w-full px-[30px] max-md:px-[15px] py-[120px] max-lg:py-[100px]">
                     <div className="w-full h-full flex justify-between gap-[150px] max-lg:gap-[50px] max-md:gap-[20px] max-md:flex-col">
@@ -123,8 +130,14 @@ const page = () => {
                         </div>
                     </div>
                 </div>
-                <div className="w-full h-full px-[30px] max-md:px-[15px]flex justify-center">
-                    <div className="max-w-[1150px] w-full h-[700px] relative max-md:h-[300px]">
+                <div className="w-full h-full px-[30px] max-md:px-[15px] flex justify-center">
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1 }}
+                        viewport={{ once: true }}
+                        className="max-w-[1150px] w-full h-[700px] relative max-md:h-[300px]"
+                    >
                         <Image
                             src={images[9].src}
                             alt={images[9].src}
@@ -132,7 +145,7 @@ const page = () => {
                             className="object-cover aspect-video"
                             fill={true}
                         />
-                    </div>
+                    </motion.div>
                 </div>
                 <div className="w-full px-[30px] max-md:px-[15px] py-[120px] max-lg:py-[100px]">
                     <div className="w-full h-full flex justify-between gap-[150px] max-lg:gap-[50px] max-md:gap-[20px] max-md:flex-col">
@@ -189,7 +202,13 @@ const page = () => {
                     </div>
                 </div>
                 <div className="w-full h-full px-[30px] max-md:px-[15px] flex justify-center">
-                    <div className="max-w-[1150px] w-full h-[700px] relative max-md:h-[300px]">
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1 }}
+                        viewport={{ once: true }}
+                        className="max-w-[1150px] w-full h-[700px] relative max-md:h-[300px]"
+                    >
                         <Image
                             src={images[16].src}
                             alt={images[16].src}
@@ -197,7 +216,7 @@ const page = () => {
                             className="object-cover aspect-video"
                             fill={true}
                         />
-                    </div>
+                    </motion.div>
                 </div>
                 <div className="w-full px-[30px] max-md:px-[15px] py-[120px] max-lg:py-[100px] bg-center bg-[url(/images/gallery/bg_4.jpg)] bg-cover">
                     <div className="w-full h-full flex justify-between gap-[150px] max-lg:gap-[50px] max-md:gap-[20px] max-md:flex-col">
@@ -218,6 +237,7 @@ const page = () => {
                     </div>
                 </div>
             </div>
+            <Footer />
         </>
     );
 };

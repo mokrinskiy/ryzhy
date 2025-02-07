@@ -53,7 +53,7 @@ const Family = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1 }}
                         viewport={{ once: true }}
-                        className="max-w-[500px] w-full space-y-[20px] max-lg:space-y-[10px]"
+                        className="max-w-[500px] w-full space-y-[20px] max-lg:space-y-[10px] text-base max-lg:text-sm"
                     >
                         <p>
                             «Первая любовь у меня закончилась удачно. Это была
@@ -121,7 +121,7 @@ const Family = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1 }}
                         viewport={{ once: true }}
-                        className="max-w-[500px] w-full space-y-[20px] max-lg:space-y-[10px]"
+                        className="max-w-[500px] w-full space-y-[20px] max-lg:space-y-[10px] text-base max-lg:text-sm"
                     >
                         <p>
                             И Ирина, и Борис отучились в Горном, поступили в

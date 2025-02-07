@@ -1,5 +1,5 @@
 export const menu_links = [
-    { title: "Стихотворения", link: "/poems" },
     { title: "Биография", link: "/biography" },
+    { title: "Стихотворения", link: "/poems" },
     { title: "Галерея", link: "/gallery" },
 ];

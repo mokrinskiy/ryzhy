@@ -51,7 +51,7 @@ const Exile = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 1 }}
                             viewport={{ once: true }}
-                            className="max-w-[500px] w-full space-y-[20px]"
+                            className="max-w-[500px] w-full space-y-[20px] text-base max-lg:text-sm"
                         >
                             <p>
                                 «Рыжий был моим единственным собеседником в
@@ -82,7 +82,7 @@ const Exile = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1 }}
                         viewport={{ once: true }}
-                        className="max-w-[500px] w-full space-y-[20px] max-md:text-sm"
+                        className="max-w-[500px] w-full space-y-[20px] text-base max-lg:text-sm"
                     >
                         <p>
                             По мнению Дозморова, своим среди интеллигенции Борис
@@ -133,7 +133,7 @@ const Exile = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1 }}
                         viewport={{ once: true }}
-                        className="max-w-[500px] w-full space-y-[20px]"
+                        className="max-w-[500px] w-full space-y-[20px] text-base max-lg:text-sm"
                     >
                         <p>
                             «Мы часто делились воспоминаниями из детства,

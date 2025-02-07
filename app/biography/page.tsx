@@ -10,6 +10,7 @@ import Vtorchermet from "@/components/biography/Vtorchermet";
 import useSmoothScroll from "@/hooks/useSmoothScroll";
 import React from "react";
 import { motion, useScroll } from "motion/react";
+import Footer from "@/components/Footer";
 
 const page = () => {
     const { scrollYProgress } = useScroll();
@@ -46,18 +47,38 @@ const page = () => {
                 <Vtorchermet />
                 <img
                     src="/images/bio/family.svg"
-                    className="w-full px-[30px]"
+                    className="w-full px-[30px] max-md:hidden"
+                />
+                <img
+                    src="/images/bio/family_m.svg"
+                    className="w-full px-[30px] md:hidden"
                 />
                 <Family />
-                <img src="/images/bio/exile.svg" className="w-full px-[30px]" />
+                <img src="/images/bio/exile.svg" className="w-full px-[30px]  max-md:hidden" />
+                <img
+                    src="/images/bio/exile_m.svg"
+                    className="w-full px-[30px] md:hidden"
+                />
                 <Exile />
-                <img src="/images/bio/poems.svg" className="w-full px-[30px]" />
+                <img src="/images/bio/poems.svg" className="w-full px-[30px]  max-md:hidden" />
+                <img
+                    src="/images/bio/poems_m.svg"
+                    className="w-full px-[30px] md:hidden"
+                />
                 <Poems />
                 <img
                     src="/images/bio/archieve.svg"
-                    className="w-full px-[30px]"
+                    className="w-full px-[30px]  max-md:hidden"
                 />
-                <Archive />
+                <img
+                    src="/images/bio/archieve_m.svg"
+                    className="w-full px-[30px] md:hidden"
+                />
+                <div>
+                    <Archive />
+                    <End />
+                    <Footer />
+                </div>
             </div>
         </>
     );

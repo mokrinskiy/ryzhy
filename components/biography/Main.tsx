@@ -77,7 +77,7 @@ const Main = () => {
                         className="h-full max-md:h-[300px] relative w-full max-w-[500px] max-md:hidden"
                     >
                         <Image
-                            src={"/images/bio/bio1.png"}
+                            src={"/images/bio/bio1.jpg"}
                             alt="bio1"
                             sizes="auto"
                             className="object-cover"
@@ -94,7 +94,7 @@ const Main = () => {
                         className="max-w-[1150px] w-full h-[700px] relative max-md:h-[300px]"
                     >
                         <Image
-                            src={"/images/bio/bio1.png"}
+                            src={"/images/bio/bio1.jpg"}
                             alt="bio1"
                             sizes="auto"
                             className="object-cover aspect-video"

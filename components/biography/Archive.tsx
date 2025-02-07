@@ -26,7 +26,7 @@ const Archive = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1 }}
                         viewport={{ once: true }}
-                        className="max-w-[500px] w-full space-y-[20px] max-lg:space-y-[10px] max-md:text-sm"
+                        className="max-w-[500px] w-full space-y-[20px] max-lg:space-y-[10px] max-md:text-sm text-base max-lg:text-sm"
                     >
                         <p>
                             7 мая 2001 года в квартире своих родителей в
@@ -86,7 +86,7 @@ const Archive = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 1 }}
                             viewport={{ once: true }}
-                            className="space-y-[20px] max-lg:space-y-[10px]"
+                            className="space-y-[20px] max-lg:space-y-[10px] text-base max-lg:text-sm"
                         >
                             <p className="font-black">
                                 Вадим Курочкин, близкий университетский друг
